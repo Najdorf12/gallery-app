@@ -52,7 +52,7 @@ const TsParticlesBg = () => {
           speed: 1,
           straight: false,
         },
-        number: { density: { enable: true, area: 800 }, value: 100 },
+        number: { density: { enable: true, area: 300 }, value: 100 },
         opacity: {
           animation: { enable: false, minimumValue: 0.1, speed: 7, sync: false },
           random: false,
