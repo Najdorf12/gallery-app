@@ -5,6 +5,7 @@ import icon2 from "/icons/art2.png";
 import icon3 from "/icons/art3.png";
 import icon4 from "/icons/comic.png";
 import icon5 from "/icons/graff.png";
+import { Link } from "react-router-dom";
 
 const cardsHomeData = [
   {
@@ -40,10 +41,10 @@ const Home = () => {
       <Navbar />
 
       <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
-        <h1 className="august-bold leading-none text-zinc-600 text-9xl  lg:text-[16rem] xl:text-[19rem] 2xl:text-[23rem] text-transparent bg-gradient-to-b bg-clip-text  from-grayCustom via-grayCustom  to-zinc-700">
+        <h1 className="august-bold leading-none text-transparent bg-gradient-to-b bg-clip-text from-grayCustom via-grayCustom to-zinc-700 text-9xl lg:text-[16rem] xl:text-[19rem] 2xl:text-[22rem]">
           ART GALLERY
         </h1>
-        <p className="text-sm  text-grayCustom font-text2 text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1300px] xl:text-xl  2xl:text-xl">
+        <p className="text-sm  text-grayCustom font-text2 text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1370px] xl:text-xl  2xl:text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis
           tempora est deserunt nulla doloremque ipsa molestias quasi magnam
           neque minima suscipit impedit animi labore ipsam, velit dolores
@@ -54,9 +55,7 @@ const Home = () => {
 
       <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-9 gap-y-2 w-full   xl:gap-x-14 2xl:gap-x-20 ">
         {cardsHomeData.map((artist, i) => (
-          <a key={i} href="#productDetail">
-            <CardsHome  artist={artist} />
-          </a>
+          <CardsHome artist={artist} />
         ))}
       </section>
     </div>
