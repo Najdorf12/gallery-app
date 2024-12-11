@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Stick+No+Bills:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Stick+No+Bills:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer base {
+  @font-face {
+    font-family: "AugustBold";
+    font-style: normal;
+    src: url(/font/August-Bold.ttf) format("woff2");
+  }
+}
+.august-bold {
+  font-family: "AugustBold";
+}
 canvas {
   display: block;
 }
@@ -13,10 +22,9 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #2D2D2D;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
-

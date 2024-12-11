@@ -34,9 +34,9 @@ const TsParticlesBg = () => {
         },
       },
       particles: {
-        color: { value: "#B7B7B7" },
+        color: { value: "#878787" },
         links: {
-          color: "#B7B7B7",
+          color: "#ffffff",
           distance: 180,
           enable: true,
           opacity: 0.4,
@@ -60,12 +60,12 @@ const TsParticlesBg = () => {
         },
         shape: {
           type: "circle",
-          stroke: { color: "#8EB486", width: 0 },
+          stroke: { color: "#212121", width: 0 },
         },
         size: {
-          animation: { enable: false, minimumValue: 0.1, speed: 90, sync: false },
+          animation: { enable: false, minimumValue: 0.2, speed: 90, sync: false },
           random: true,
-          value: 5,
+          value: 3.5,
         },
       },
       retina_detect: true,
@@ -74,49 +74,8 @@ const TsParticlesBg = () => {
   );
 
   return (
-    <div>
+    <div className="absolute inset-0">
       {init && <Particles id="tsparticles" options={options} />}
-      <div className="github">
-        <a
-          className="btn btn-link"
-          href="https://github.com/matteobruni/tsparticles"
-          title="Find more info on GitHub"
-        >
-          <img
-            className="img-fluid"
-            id="gh-mark"
-            src="https://cdn.matteobruni.it/images/particles/GitHub-Mark-120px-plus.png"
-            alt=""
-          />
-          <span id="gh-project">tsParticles</span>
-        </a>
-        <div>
-          <a
-            className="github-button"
-            href="https://github.com/matteobruni/tsparticles"
-            data-icon="octicon-star"
-            aria-label="Star matteobruni/tsparticles on GitHub"
-          >
-            Star
-          </a>
-          <a
-            className="github-button"
-            href="https://github.com/matteobruni/tsparticles/fork"
-            data-icon="octicon-repo-forked"
-            aria-label="Fork matteobruni/tsparticles on GitHub"
-          >
-            Fork
-          </a>
-          <a
-            className="github-button"
-            href="https://github.com/matteobruni/tsparticles/releases/tag/v1.15.1"
-            data-icon="octicon-download"
-            aria-label="Download matteobruni/tsparticles on GitHub"
-          >
-            Download
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
