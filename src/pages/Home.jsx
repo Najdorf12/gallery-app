@@ -36,22 +36,20 @@ const cardsHomeData = [
 
 const Home = () => {
   return (
-    <div className="w-full h-[100dvh] lg:h-screen z-50 relative flex flex-col justify-evenly items-center gap-2">
+    <div className="w-full h-[100dvh] lg:h-screen z-50 relative flex flex-col justify-evenly items-center pt-2 gap-6">
      
       <Navbar />
      
       <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
-        <h1 className="august-bold leading-none text-grayCustom text-8xl  md:text-8xl  lg:text-[16rem] xl:text-[18rem] 2xl:text-[20rem]">
+        <h1 className="august-bold leading-none text-zinc-500 text-8xl  md:text-8xl  lg:text-[16rem] xl:text-[18rem] 2xl:text-[20rem]">
           ART GALLERY
         </h1>
-        <p className="text-sm  text-grayCustom font-text2 text-center text-pretty px-2 mt-4 lg:text-base xl:max-w-[1000px] 2xl:max-w-[1400px] xl:text-xl  2xl:text-xl">
-          Conecta con la creatividad de artistas emergentes y explora sus obras.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-          blanditiis cupiditate iusto ducimus reprehenderit
+        <p className="text-sm  text-zinc-500 font-text2 text-center text-pretty px-2 mt-4 lg:text-base xl:max-w-[1000px] 2xl:max-w-[1400px] xl:text-xl  2xl:text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis tempora est deserunt nulla doloremque ipsa molestias quasi magnam neque minima suscipit impedit animi labore ipsam, velit dolores accusamus iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         </p>
       </article>
 
-      <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-6 gap-y-6 w-full   xl:gap-x-14 2xl:gap-x-20 ">
+      <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-9 gap-y-2 w-full   xl:gap-x-14 2xl:gap-x-20 ">
         {cardsHomeData.map((artist, i) => (
           <CardsHome key={i} artist={artist} />
         ))}
