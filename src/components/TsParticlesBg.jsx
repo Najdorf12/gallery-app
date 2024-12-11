@@ -30,7 +30,7 @@ const TsParticlesBg = () => {
         },
         modes: {
           push: { quantity: 7 },
-          attract: { distance: 200, duration: 7, factor: 5 },
+          attract: { distance: 190, duration: 7, factor: 5 },
         },
       },
       particles: {
