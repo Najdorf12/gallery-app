@@ -5,8 +5,8 @@ const CardsHome = ({ artist }) => {
         <img src={artist?.icon} alt="icon" className="w-9 lg:w-12 xl:w-12 2xl:w-16" />
       </figure>
       <article className="text-sm mt-4 font-text2 font-normal text-balance lg:text-base xl:text-lg lg:mt-6 2xl:text-lg">
-        <h6 className="text-grayCustom">{artist?.name}</h6>
-        <p  className="text-[12px] text-zinc-400 lg:text-base 2xl:text-base">{artist?.content}</p>
+        <h6 className="text-whiteCustom">{artist?.name}</h6>
+        <p  className="text-[12px] text-grayCustom lg:text-base 2xl:text-base">{artist?.content}</p>
       </article>
     </div>
   );
