@@ -37,7 +37,7 @@ const cardsHomeData = [
 
 const Home = () => {
   return (
-    <div className="w-full h-[100dvh] lg:h-screen z-50 relative flex flex-col justify-evenly items-center pt-2 gap-6">
+    <div className="w-full h-[100dvh] lg:h-screen z-50 relative flex flex-col justify-evenly items-center pt-2 ">
       <Navbar />
 
       <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
@@ -53,7 +53,7 @@ const Home = () => {
         </p>
       </article>
 
-      <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-9 gap-y-2 w-full   xl:gap-x-14 2xl:gap-x-20 ">
+      <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-9 gap-y-2 w-full   xl:gap-x-9 2xl:gap-x-12 ">
         {cardsHomeData.map((artist, i) => (
           <CardsHome artist={artist} />
         ))}
