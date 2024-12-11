@@ -1,6 +1,6 @@
 const CardsHome = ({ artist }) => {
   return (
-    <div className="relative z-50 border-l border-b border-zinc-600 w-[160px] rounded-sm h-[110px] pl-3 pt-1 lg:pl-4 lg:w-[240px] lg:h-[145px]  2xl:w-[250px] 2xl:h-[160px]">
+    <div className="relative z-50 border-l-[2px] border-b-[2px] border-zinc-600 w-[160px] rounded-sm h-[110px] pl-3 pt-1 lg:pl-4 lg:w-[240px] lg:h-[145px]  2xl:w-[250px] 2xl:h-[160px]">
       <figure>
         <img src={artist?.icon} alt="icon" className="w-9 lg:w-12 xl:w-14 2xl:w-16" />
       </figure>
