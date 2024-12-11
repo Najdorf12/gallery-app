@@ -37,7 +37,7 @@ const TsParticlesBg = () => {
         color: { value: "#878787" },
         links: {
           color: "#ffffff",
-          distance: 190,
+          distance: 180,
           enable: true,
           opacity: 0.4,
           width: .8,
