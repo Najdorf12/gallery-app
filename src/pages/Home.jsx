@@ -41,7 +41,7 @@ const Home = () => {
       <Navbar />
      
       <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
-        <h1 className="august-bold leading-none text-zinc-600 text-9xl  lg:text-[16rem] xl:text-[18rem] 2xl:text-[23rem]">
+        <h1 className="august-bold leading-none text-zinc-600 text-9xl  lg:text-[16rem] xl:text-[18rem] 2xl:text-[23rem] text-transparent bg-gradient-to-b bg-clip-text  from-grayCustom via-grayCustom  to-zinc-700">
           ART GALLERY
         </h1>
         <p className="text-sm  text-grayCustom font-text2 text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1300px] xl:text-xl  2xl:text-xl">
