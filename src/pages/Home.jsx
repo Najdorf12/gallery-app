@@ -36,7 +36,7 @@ const cardsHomeData = [
 
 const Home = () => {
   return (
-    <div className="w-full h-screen z-50 relative flex flex-col justify-evenly items-center gap-2">
+    <div className="w-full h-[100dvh] lg:h-screen z-50 relative flex flex-col justify-evenly items-center gap-2">
      
       <Navbar />
      
