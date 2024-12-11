@@ -37,7 +37,7 @@ const TsParticlesBg = () => {
         color: { value: "#878787" },
         links: {
           color: "#ffffff",
-          distance: 180,
+          distance: 200,
           enable: true,
           opacity: 0.4,
           width: .8,
@@ -52,7 +52,7 @@ const TsParticlesBg = () => {
           speed: 1,
           straight: false,
         },
-        number: { density: { enable: true, area: 300 }, value: 100 },
+        number: { density: { enable: true, area: 300 }, value: 110 },
         opacity: {
           animation: { enable: false, minimumValue: 0.1, speed: 7, sync: false },
           random: false,
