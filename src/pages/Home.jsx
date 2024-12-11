@@ -53,7 +53,7 @@ const Home = () => {
         </p>
       </article>
 
-      <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-9 gap-y-2 w-full   xl:gap-x-9 2xl:gap-x-12 ">
+      <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-9 gap-y-2 w-full  xl:gap-x-10 2xl:gap-x-12 ">
         {cardsHomeData.map((artist, i) => (
           <CardsHome artist={artist} />
         ))}
