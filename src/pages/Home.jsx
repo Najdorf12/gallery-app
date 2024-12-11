@@ -41,10 +41,10 @@ const Home = () => {
       <Navbar />
      
       <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
-        <h1 className="august-bold leading-none text-zinc-500 text-8xl  md:text-8xl  lg:text-[16rem] xl:text-[18rem] 2xl:text-[20rem]">
+        <h1 className="august-bold leading-none text-zinc-600 text-9xl  lg:text-[16rem] xl:text-[18rem] 2xl:text-[23rem]">
           ART GALLERY
         </h1>
-        <p className="text-sm  text-zinc-500 font-text2 text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1400px] xl:text-xl  2xl:text-xl">
+        <p className="text-sm  text-zinc-300 font-text2 text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1300px] xl:text-xl  2xl:text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis tempora est deserunt nulla doloremque ipsa molestias quasi magnam neque minima suscipit impedit animi labore ipsam, velit dolores accusamus iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         </p>
       </article>
