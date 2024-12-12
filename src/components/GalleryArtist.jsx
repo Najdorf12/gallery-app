@@ -1,23 +1,29 @@
-const GalleryArtist = ({images}) => {
+const GalleryArtist = ({ images }) => {
   return (
-    <section>
-      <figure className="w-full px-2">
+    <section className="flex flex-col lg:flex-row bg-red-500">
+      <figure className="w-full px-2 lg:w-1/2 bg-teal-500 flex justify-center items-center">
         <img
-           src={images[0]} 
+          src={images[0]}
           alt="img-gallery"
-          className="object-cover object-center w-full h-full"
+          className="object-cover object-center w-full h-full max-w-[500px]"
         />
       </figure>
-      <div className="flex flex-wrap justify-center items-center gap-2 ">
-        <div className="border border-stone-500 h-[200px] w-[45%]">Anatomy</div>
-        <div className="border border-stone-500 h-[200px] w-[45%]">History</div>
-      </div>
-      <div className="flex flex-wrap justify-center items-center gap-2 ">
-        <div className="border border-stone-500 h-[200px] w-[45%]">
-          Astronomy
+      <div >
+        <div className="flex flex-wrap justify-center items-center gap-2 ">
+          <div className="border border-stone-500 h-[200px] w-[45%]">
+            Anatomy
+          </div>
+          <div className="border border-stone-500 h-[200px] w-[45%]">
+            History
+          </div>
         </div>
-        <div className="border border-stone-500 h-[200px] w-[45%]">
-          Philoshophy
+        <div className="flex flex-wrap justify-center items-center gap-2 ">
+          <div className="border border-stone-500 h-[200px] w-[45%]">
+            Astronomy
+          </div>
+          <div className="border border-stone-500 h-[200px] w-[45%]">
+            Philoshophy
+          </div>
         </div>
       </div>
     </section>

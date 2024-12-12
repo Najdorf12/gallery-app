@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function Slider({ images }) {
+  const [windWidth, setWindWidth] = useState(window.innerWidth)
   return (
     <>
       <section className="wrapper-slider z-50 ">
@@ -18,11 +19,11 @@ export default function Slider({ images }) {
             centeredSlides={true}
             initialSlide={3}
             slidesPerView={"auto"}
-            spaceBetween={40}
+            spaceBetween={windWidth < 1000 ? 40 : 60 }
             coverflowEffect={{
               rotate: 25,
               stretch: 0,
-              depth: 50,
+              depth: 220,
               modifier: 1,
               slideShadows: false,
             }}

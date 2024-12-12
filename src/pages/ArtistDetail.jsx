@@ -9,7 +9,7 @@ const ArtistDetail = () => {
   const artist = cardsHomeData.find((artist) => artist.id === id);
 
   return (
-    <section className="bg-whiteCustom pt-14">
+    <section className="bg-whiteCustom pt-14 overflow-hidden">
       <Link to={"/"}>
         <nav className="absolute top-2  right-4 font-text font-semibold text-lg text-grayCustom border-l-[2px] border-redCustom py-[2px] pl-2">
           Volver
@@ -21,7 +21,7 @@ const ArtistDetail = () => {
           {artist?.firstname} <br />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
-        <div className="my-9">
+        <div className="my-9 ">
           <Slider images={artist?.images} />
         </div>
       </article>
