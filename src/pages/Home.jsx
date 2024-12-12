@@ -5,8 +5,6 @@ import {cardsHomeData} from "../data/artists";
 
 import TsParticlesBg from "../components/TsParticlesBg";
 
-
-
 const Home = () => {
   return (
     <main className="relative w-full h-[100dvh] lg:h-screen z-50 flex flex-col justify-center items-center  bg-red-700">

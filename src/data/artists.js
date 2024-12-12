@@ -32,7 +32,8 @@ export const cardsHomeData = [
     {
       id: "LauraAguirre",
       icon: icon2,
-      name: "Laura Aguirre",
+      firstname: "Laura",
+      lastname: "Aguirre",
       contentHome: "Lorem ipsum dolor sit",
       images:[
         imgLau1,
@@ -45,7 +46,8 @@ export const cardsHomeData = [
     {
       id: "ClaudioAlvarex",
       icon: icon3,
-      name: "Claudio Alvarex",
+      firstname: "Claudio",
+      lastname: "Alvarez",
       contentHome: "Osos Poéticos filosóficos",
       images:[
          imgAlvarex1,
@@ -58,7 +60,8 @@ export const cardsHomeData = [
     {
       id: "EduardoHinojosa",
       icon: icon1,
-      name: "Eduardo Hinojosa",
+      firstname: "Eduardo",
+      lastname:"Hinojosa",
       contentHome: "Lorem ipsum dolor sit",
       images:[
          imgEdu1,
@@ -71,7 +74,8 @@ export const cardsHomeData = [
     {
       id: "VarasMackenzie",
       icon: icon4,
-      name: "Varas Mackenzie",
+      firstname: "Sebastián",
+      lastname: "Varas",
       contentHome: "Lorem ipsum dolor sit",
       images:[
          imgVaras1,
@@ -84,7 +88,8 @@ export const cardsHomeData = [
     {
       id: "BisyLorem",
       icon: icon5,
-      name: "Bisy Lorem",
+      firstname: "Bisy",
+      lastname: "Lorem",
       contentHome: "Lorem ipsum dolor sit",
     },
   ];

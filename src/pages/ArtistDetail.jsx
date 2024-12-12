@@ -17,7 +17,7 @@ const ArtistDetail = () => {
       <article className="flex flex-col text-balance text-start  ">
         <h4 className="text-9xl font-semibold august-bold text-blackCustom pl-4">
           
-        {artist?.name} <span className="text-redCustom">Hinojosa</span> 
+        {artist?.firstname} <span className="text-redCustom">{artist?.lastname}</span> 
         </h4>
         <div className="bg-blackCustom mt-6 py-6 px-4 font-text2 font-normal ">
           <p className="text-whiteCustom text-sm  ">

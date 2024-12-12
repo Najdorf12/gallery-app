@@ -14,7 +14,7 @@ const CardsHome = ({ artist }) => {
         <article className="text-sm mt-4  md:text-balance lg:text-base xl:mt-5 xl:text-lg 2xl:mt-7  2xl:text-lg">
           <div className="w-full h-[1px] bg-stone-700 "></div>
           <h6 className="text-whiteCustom font-text font-medium text-base mt-1 lg:mt-2  xl:text-xl 2xl:text-2xl">
-            {artist?.name}
+            {artist?.firstname} {artist?.lastname}
           </h6>
           <p className="text-[13px] text-stone-500 font-text2 leading-3 lg:text-base lg:leading-5 2xl:text-lg ">
             {artist?.contentHome}
