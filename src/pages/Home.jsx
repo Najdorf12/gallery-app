@@ -20,6 +20,7 @@ const cardsHomeData = [
     icon: icon3,
     name: "Claudio Alvarex",
     content: "Osos Poéticos filosóficos",
+    
   },
   {
     id: "EduardoHinojosa",
