@@ -59,7 +59,7 @@ canvas {
 
 .swiper-slide {
   position: relative;
-  max-width: 270px;
+  max-width: 390px;
   aspect-ratio: 1/1;
   border-radius: 10px;
 }
@@ -104,7 +104,7 @@ canvas {
 @media(min-width:1000px){
   .swiper-slide {
     position: relative;
-    max-width: 400px;
+    max-width: 430px;
     aspect-ratio: 1/1;
     border-radius: 10px;
   }
