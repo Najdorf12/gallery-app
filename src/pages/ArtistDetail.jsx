@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const ArtistDetail = () => {
   const { id } = useParams();
   const artist = cardsHomeData.find((artist) => artist.id === id);
-  
+
   return (
     <section className="min-h-screen bg-whiteCustom pt-12">
       <Link to={"/"}>
@@ -16,8 +16,8 @@ const ArtistDetail = () => {
       </Link>
       <article className="flex flex-col text-balance text-start  ">
         <h4 className="text-9xl font-semibold august-bold text-blackCustom pl-4">
-          
-        {artist?.firstname} <span className="text-redCustom">{artist?.lastname}</span> 
+          {artist?.firstname}{" "}
+          <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
         <div className="bg-blackCustom mt-6 py-6 px-4 font-text2 font-normal ">
           <p className="text-whiteCustom text-sm  ">
@@ -25,10 +25,9 @@ const ArtistDetail = () => {
             Playa Ancha y Ciencias de la Educación. Valparaíso, Chile
           </p>
           <p className="text-balance text-start pr-6 text-grayCustom mt-3 text-sm">
-            Licenciado en Artes y diseñador escénico con amplia experiencia como
-            escenógrafo y montajista, ha trabajado desde 2016 con artistas de
-            diversas partes del mundo, incluyendo Chile, Argentina, México,
-            Rumania, Francia, Italia y España{" "}
+            Con amplia experiencia como escenógrafo y montajista, ha trabajado
+            desde 2016 con artistas de diversas partes del mundo, incluyendo
+            Chile, Argentina, México, Rumania, Francia, Italia y España{" "}
             {/* Actualmente, se desempeña en el
             montaje de arte y museografía para distintos museos y salas de arte
             en Chile, destacándose como montajista del Festival Internacional de
@@ -43,9 +42,19 @@ const ArtistDetail = () => {
           </p>
         </div>
       </article>
+
       <div className=" my-6  ">
-       <Slider images={artist?.images}/>
+        <Slider images={artist?.images} />
       </div>
+
+      <article className="bg-blackCustom pt-12 ">
+        <p className="font-text2 text-4xl text-redCustom px-4 text-balance font-normal ">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div className="h-3 w-full bg-grayCustom mt-3"></div>
+      </article>
+      {/* images-section */}
+      <section></section>
     </section>
   );
 };
