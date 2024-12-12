@@ -1,6 +1,9 @@
+import { useParams } from "react-router-dom";
 import eduImg1 from "/artists/LauraAguirre/03.jpg";
 
 const ArtistDetail = () => {
+  const { id } = useParams();
+  console.log(id)
   return (
     <section>
       {/* <figure className="w-full h-full absolute inset-0">

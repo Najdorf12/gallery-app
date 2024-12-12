@@ -1,37 +1,41 @@
 import Navbar from "../components/Navbar";
 import CardsHome from "../components/CardsHome";
-import icon1 from "/icons/art1.png";
-import icon2 from "/icons/art2.png";
-import icon3 from "/icons/art3.png";
-import icon4 from "/icons/comic.png";
-import icon5 from "/icons/graff.png";
-import { Link } from "react-router-dom";
+import icon1 from "/icons/icon1.jpeg";
+import icon2 from "/icons/icon2.jpeg";
+import icon3 from "/icons/icon3.jpeg";
+import icon4 from "/icons/icon4.jpeg";
+import icon5 from "/icons/icon3.jpeg";
 import TsParticlesBg from "../components/TsParticlesBg";
 
 const cardsHomeData = [
   {
+    id: "EduardoHinojosa",
     icon: icon1,
     name: "Eduardo Hinojosa",
     content: "Lorem ipsum dolor sit",
   },
   {
+    id: "LauraAguirre",
     icon: icon2,
     name: "Laura Aguirre",
     content: "Lorem ipsum dolor sit",
   },
   {
+    id: "ClaudioAlvarex",
     icon: icon3,
     name: "Claudio Alvarex",
     content: "Osos Poéticos filosóficos",
   },
   {
+    id: "VarasMackenzie",
     icon: icon4,
-    name: "Bisy Lorem",
+    name: "Varas Mackenzie",
     content: "Lorem ipsum dolor sit",
   },
   {
+    id: "BisyLorem",
     icon: icon5,
-    name: "Varas Lorem",
+    name: "Bisy Lorem",
     content: "Lorem ipsum dolor sit",
   },
 ];
@@ -58,9 +62,7 @@ const Home = () => {
 
         <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-9 gap-y-2 w-full  xl:gap-x-10 2xl:gap-x-14 ">
           {cardsHomeData.map((artist, i) => (
-            <Link to={"/:id"}>
-            <CardsHome artist={artist} />
-            </Link>
+              <CardsHome key={i} artist={artist} />
           ))}
         </section>
       </div>
