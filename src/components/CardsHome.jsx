@@ -11,11 +11,11 @@ const CardsHome = ({ artist }) => {
             className="w-10 h-10 object-cover object-center rounded-full lg:w-12 lg:h-12 xl:h-14 xl:w-14 2xl:h-16 2xl:w-16"
           />
         </figure>
-        <article className="text-sm mt-4  md:text-balance lg:text-base xl:text-lg  2xl:text-lg">
-          <h6 className="text-whiteCustom font-text font-medium text-lg  lg:text-xl 2xl:text-2xl">
+        <article className="text-sm mt-4  md:text-balance lg:text-base xl:mt-5 xl:text-lg 2xl:mt-6  2xl:text-lg">
+          <h6 className="text-whiteCustom font-text font-medium text-lg  xl:text-xl 2xl:text-2xl">
             {artist?.name}
           </h6>
-          <p className="text-[13px] text-stone-500 font-text2 leading-3 lg:text-base 2xl:text-lg ">
+          <p className="text-[13px] text-stone-500 font-text2 leading-3 lg:text-base lg:leading-4 2xl:text-lg ">
             {artist?.content}
           </p>
         </article>
