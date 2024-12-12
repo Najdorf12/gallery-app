@@ -13,12 +13,12 @@ const Navbar = () => {
         <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
           Proyecto
         </li>
-        <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
-          Sobre Nosotros
-        </li>
         <li className="text-whiteCustom duration-700 cursor-pointer hover:scale-110">
           Contacto
         </li>
+       {/*  <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
+          Sobre Nosotros
+        </li> */}
       </ul>
     </nav>
   );
