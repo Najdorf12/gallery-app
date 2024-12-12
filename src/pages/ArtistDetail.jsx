@@ -37,8 +37,8 @@ const ArtistDetail = () => {
 
    
 
-      <article className="bg-blackCustom py-12 ">
-        <p className="font-text2 text-4xl text-grayCustom px-4 text-balance font-normal ">
+      <article className="bg-blackCustom pt-4 pb-5 ">
+        <p className="font-text text-4xl text-grayCustom px-4 text-balance font-medium ">
           Lorem, ipsum dolor sit amet <span className="text-redCustom">consectetur adipisicing elit.</span>
         </p>
       </article>
