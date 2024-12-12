@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import Slider from "../components/Slider";
+import GalleryArtist from "../components/GalleryArtist";
 import { cardsHomeData } from "../data/artists";
 import { useEffect } from "react";
 
@@ -8,21 +9,24 @@ const ArtistDetail = () => {
   const artist = cardsHomeData.find((artist) => artist.id === id);
 
   return (
-    <section className="min-h-screen bg-whiteCustom pt-12">
+    <section className="bg-whiteCustom pt-12">
       <Link to={"/"}>
         <nav className="absolute top-1 right-2 font-text font-medium text-base text-blackCustom">
           Volver
         </nav>
       </Link>
-      <article className="flex flex-col text-balance text-start  ">
+      <article className="flex flex-col text-balance text-start lg:h-screen ">
         <h4 className="text-[9rem] leading-[9rem] font-semibold august-bold text-blackCustom pl-4">
-          {artist?.firstname}{" "} <br />
+          {artist?.firstname} <br />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
         <div className=" my-6  ">
-        <Slider images={artist?.images} />
-      </div>
-        <div className="bg-blackCustom mt-6 py-6 px-4 font-text2 font-normal ">
+          <Slider images={artist?.images} />
+        </div>
+      </article>
+
+      <article className="bg-blackCustom pt-6 pb-5">
+        <div className="bg-blackCustom  px-4 font-text2 font-normal ">
           <p className="text-whiteCustom text-sm  ">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
             Playa Ancha y Ciencias de la Educación. Valparaíso, Chile
@@ -33,24 +37,18 @@ const ArtistDetail = () => {
             Chile, Argentina, México, Rumania, Francia, Italia y España{" "}
           </p>
         </div>
+        <div className="font-title text-5xl mt-12 text-grayCustom pl-3  text-balance font-medium ">
+          Lorem, ipsum dolor sit {" "}
+          <span className="text-redCustom">amet consectetur adipisicing elit. </span>
+           Lorem, ipsum dolor sit amet
+        </div>
       </article>
 
-   
-
-      <article className="bg-blackCustom pt-4 pb-5 ">
-        <p className="font-text text-4xl text-grayCustom px-4 text-balance font-medium ">
-          Lorem, ipsum dolor sit amet <span className="text-redCustom">consectetur adipisicing elit.</span>
-        </p>
-      </article>
       {/* images-section */}
-     
       <section className="min-h-screen pt-12">
-          <figure className="w-full px-2">
-            <img src={artist?.images[0]} alt="img-gallery" className="object-cover object-center w-full h-full" />
-          </figure>
-          <article className=""></article>
+        <GalleryArtist images={artist?.images} />
       </section>
-     
+
       <footer className="mt-9 px-3">
         <p className="text-sm font-text2 ">
           Actualmente, se desempeña en el montaje de arte y museografía para

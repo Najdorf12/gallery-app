@@ -16,7 +16,7 @@ export default {
         grayCustom: "#878787",
       },
       fontFamily: {
-        title: ["Stick No Bills", "serif"],
+        title: ["Inter", "sans-serif"],
         text: ["Raleway", "serif"],
         text2: ["Montserrat", "serif"],
       },

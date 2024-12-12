@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function Slider({ images }) {
-    console.log(images)
   return (
     <>
       <section className="wrapper-slider z-50 ">
