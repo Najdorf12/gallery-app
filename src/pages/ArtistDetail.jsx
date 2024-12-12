@@ -9,23 +9,24 @@ const ArtistDetail = () => {
   const artist = cardsHomeData.find((artist) => artist.id === id);
 
   return (
-    <section className="bg-whiteCustom pt-12">
+    <section className="bg-whiteCustom pt-14">
       <Link to={"/"}>
-        <nav className="absolute top-1 right-2 font-text font-medium text-base text-blackCustom">
+        <nav className="absolute top-2  right-4 font-text font-semibold text-lg text-grayCustom border-l-[2px] border-redCustom py-[2px] pl-2">
           Volver
         </nav>
       </Link>
-      <article className="flex flex-col text-balance text-start lg:h-screen ">
+
+      <article className="flex flex-col text-balance text-start">
         <h4 className="text-[9rem] leading-[9rem] font-semibold august-bold text-blackCustom pl-4">
           {artist?.firstname} <br />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
-        <div className=" my-6  ">
+        <div className="my-9">
           <Slider images={artist?.images} />
         </div>
       </article>
 
-      <article className="bg-blackCustom pt-6 pb-5">
+      <article className="bg-blackCustom pt-6 pb-5 text-balance">
         <div className="bg-blackCustom  px-4 font-text2 font-normal ">
           <p className="text-whiteCustom text-sm  ">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
@@ -37,10 +38,12 @@ const ArtistDetail = () => {
             Chile, Argentina, México, Rumania, Francia, Italia y España{" "}
           </p>
         </div>
-        <div className="font-title text-5xl mt-12 text-grayCustom pl-3  text-balance font-medium ">
+        <div className=" mt-12 pl-3 text-balance font-medium text-grayCustom font-title text-4xl">
           Lorem, ipsum dolor sit {" "}
-          <span className="text-redCustom">amet consectetur adipisicing elit. </span>
-           Lorem, ipsum dolor sit amet
+          <span className="text-redCustom">
+            amet consectetur adipisicing elit.{" "}
+          </span>
+          Lorem, ipsum dolor sit amet
         </div>
       </article>
 
