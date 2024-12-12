@@ -43,9 +43,9 @@ const cardsHomeData = [
 
 const Home = () => {
   return (
-    <main className="relative w-full h-[100dvh] lg:h-screen z-50 flex flex-col justify-center items-center bg-red-700">
+    <main className="relative w-full h-[100dvh] lg:h-screen z-50 flex flex-col justify-center items-center  bg-red-700">
       <TsParticlesBg />
-      <div className="w-full h-[100dvh] lg:h-screen z-50 relative flex flex-col justify-evenly items-center pt-2 ">
+      <div className="w-full h-[100dvh] lg:h-screen z-50 relative flex flex-col justify-evenly items-center pt-4 ">
         <Navbar />
 
         <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
@@ -61,7 +61,7 @@ const Home = () => {
           </p>
         </article>
 
-        <section className="relative z-50  flex flex-wrap   justify-center items-center gap-x-3 gap-y-4 w-full  lg:gap-x-6 xl:gap-x-9 2xl:gap-x-14 ">
+        <section className="relative z-50  flex flex-wrap mt-2 justify-center items-center gap-x-3 gap-y-5 w-full  lg:gap-x-6 xl:gap-x-9 2xl:gap-x-14 ">
           {cardsHomeData.map((artist, i) => (
               <CardsHome key={i} artist={artist} />
           ))}
