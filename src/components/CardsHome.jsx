@@ -17,7 +17,7 @@ const CardsHome = ({ artist }) => {
             {artist?.name}
           </h6>
           <p className="text-[13px] text-stone-500 font-text2 leading-3 lg:text-base lg:leading-5 2xl:text-lg ">
-            {artist?.content}
+            {artist?.contentHome}
           </p>
         </article>
       </div>{" "}

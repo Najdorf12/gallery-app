@@ -1,9 +1,12 @@
 import { useParams, Link } from "react-router-dom";
-import eduImg1 from "/artists/LauraAguirre/03.jpg";
+import Slider from "../components/Slider";
+import { cardsHomeData } from "../data/artists";
+import { useEffect } from "react";
 
 const ArtistDetail = () => {
   const { id } = useParams();
-  console.log(id);
+  const artist = cardsHomeData.find((artist) => artist.id === id);
+  
   return (
     <section className="min-h-screen bg-whiteCustom pt-12">
       <Link to={"/"}>
@@ -13,19 +16,20 @@ const ArtistDetail = () => {
       </Link>
       <article className="flex flex-col text-balance text-start  ">
         <h4 className="text-9xl font-semibold august-bold text-blackCustom pl-4">
-          Eduardo Andrés <span className="text-redCustom">Hinojosa</span>
+          
+        {artist?.name} <span className="text-redCustom">Hinojosa</span> 
         </h4>
-        <div className="bg-blackCustom mt-6 pt-3 px-3">
-          <p className="text-grayCustom">
-            Licenciando en Artes con mención en Pintura y Gráfica <br />
-            Universidad de Playa Ancha y Ciencias de la Educación; Valparaíso,
-            Chile.
+        <div className="bg-blackCustom mt-6 py-6 px-4 font-text2 font-normal ">
+          <p className="text-whiteCustom text-sm  ">
+            Licenciando en Artes con mención en Pintura y Gráfica Universidad de
+            Playa Ancha y Ciencias de la Educación. Valparaíso, Chile
           </p>
-          <p className="text-balance text-start pr-6 text-redCustom">
+          <p className="text-balance text-start pr-6 text-grayCustom mt-3 text-sm">
             Licenciado en Artes y diseñador escénico con amplia experiencia como
             escenógrafo y montajista, ha trabajado desde 2016 con artistas de
             diversas partes del mundo, incluyendo Chile, Argentina, México,
-            Rumania, Francia, Italia y España. Actualmente, se desempeña en el
+            Rumania, Francia, Italia y España{" "}
+            {/* Actualmente, se desempeña en el
             montaje de arte y museografía para distintos museos y salas de arte
             en Chile, destacándose como montajista del Festival Internacional de
             Fotografía de Valparaíso (FIFV) desde 2018. El año 2024 es parte del
@@ -35,10 +39,13 @@ const ArtistDetail = () => {
             conocimiento en ingeniería, habiendo cursado estudios en ingeniería
             en construcción, electromecánica, robótica y fotografía, lo que le
             permite aportar una visión técnica innovadora y multidisciplinaria a
-            sus proyectos artísticos.
+            sus proyectos artísticos. */}
           </p>
         </div>
       </article>
+      <div className=" my-2  ">
+       <Slider images={artist?.images}/>
+      </div>
     </section>
   );
 };

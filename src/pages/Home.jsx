@@ -1,46 +1,11 @@
 import Navbar from "../components/Navbar";
 import CardsHome from "../components/CardsHome";
-import icon1 from "/icons/icon1.jpeg";
-import icon2 from "/icons/icon2.jpeg";
-import icon3 from "/icons/icon3.jpeg";
-import icon4 from "/icons/icon4.jpeg";
-import icon5 from "/icons/icon3.jpeg";
+import {cardsHomeData} from "../data/artists";
+
+
 import TsParticlesBg from "../components/TsParticlesBg";
 
-const cardsHomeData = [
 
-  {
-    id: "LauraAguirre",
-    icon: icon2,
-    name: "Laura Aguirre",
-    content: "Lorem ipsum dolor sit",
-  },
-  {
-    id: "ClaudioAlvarex",
-    icon: icon3,
-    name: "Claudio Alvarex",
-    content: "Osos Poéticos filosóficos",
-    
-  },
-  {
-    id: "EduardoHinojosa",
-    icon: icon1,
-    name: "Eduardo Hinojosa",
-    content: "Lorem ipsum dolor sit",
-  },
-  {
-    id: "VarasMackenzie",
-    icon: icon4,
-    name: "Varas Mackenzie",
-    content: "Lorem ipsum dolor sit",
-  },
-  {
-    id: "BisyLorem",
-    icon: icon5,
-    name: "Bisy Lorem",
-    content: "Lorem ipsum dolor sit",
-  },
-];
 
 const Home = () => {
   return (
