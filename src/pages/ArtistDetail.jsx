@@ -19,6 +19,9 @@ const ArtistDetail = () => {
           {artist?.firstname}{" "} <br />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
+        <div className=" my-6  ">
+        <Slider images={artist?.images} />
+      </div>
         <div className="bg-blackCustom mt-6 py-6 px-4 font-text2 font-normal ">
           <p className="text-whiteCustom text-sm  ">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
@@ -32,9 +35,7 @@ const ArtistDetail = () => {
         </div>
       </article>
 
-      <div className=" my-6  ">
-        <Slider images={artist?.images} />
-      </div>
+   
 
       <article className="bg-blackCustom py-12 ">
         <p className="font-text2 text-4xl text-grayCustom px-4 text-balance font-normal ">
