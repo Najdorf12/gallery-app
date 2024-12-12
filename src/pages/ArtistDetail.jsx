@@ -43,7 +43,7 @@ const ArtistDetail = () => {
           </p>
         </div>
       </article>
-      <div className=" my-2  ">
+      <div className=" my-6  ">
        <Slider images={artist?.images}/>
       </div>
     </section>
