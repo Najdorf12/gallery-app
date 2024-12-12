@@ -43,8 +43,11 @@ const ArtistDetail = () => {
       </article>
       {/* images-section */}
      
-      <section className="min-h-screen">
-
+      <section className="min-h-screen pt-12">
+          <figure className="w-full px-2">
+            <img src={artist?.images[0]} alt="img-gallery" className="object-cover object-center w-full h-full" />
+          </figure>
+          <article className=""></article>
       </section>
      
       <footer className="mt-9 px-3">
