@@ -15,8 +15,8 @@ const ArtistDetail = () => {
         </nav>
       </Link>
       <article className="flex flex-col text-balance text-start  ">
-        <h4 className="text-9xl font-semibold august-bold text-blackCustom pl-4">
-          {artist?.firstname}{" "}
+        <h4 className="text-[9rem] leading-[9rem] font-semibold august-bold text-blackCustom pl-4">
+          {artist?.firstname}{" "} <br />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
         <div className="bg-blackCustom mt-6 py-6 px-4 font-text2 font-normal ">
@@ -28,17 +28,6 @@ const ArtistDetail = () => {
             Con amplia experiencia como escenógrafo y montajista, ha trabajado
             desde 2016 con artistas de diversas partes del mundo, incluyendo
             Chile, Argentina, México, Rumania, Francia, Italia y España{" "}
-            {/* Actualmente, se desempeña en el
-            montaje de arte y museografía para distintos museos y salas de arte
-            en Chile, destacándose como montajista del Festival Internacional de
-            Fotografía de Valparaíso (FIFV) desde 2018. El año 2024 es parte del
-            equipo de montajistas de la "Bienal de Artes Internacional de
-            Valparaíso" en colaboración con FAGNES. A lo largo de su carrera, ha
-            logrado una integración única de su formación artística con su
-            conocimiento en ingeniería, habiendo cursado estudios en ingeniería
-            en construcción, electromecánica, robótica y fotografía, lo que le
-            permite aportar una visión técnica innovadora y multidisciplinaria a
-            sus proyectos artísticos. */}
           </p>
         </div>
       </article>
@@ -47,14 +36,31 @@ const ArtistDetail = () => {
         <Slider images={artist?.images} />
       </div>
 
-      <article className="bg-blackCustom pt-12 ">
-        <p className="font-text2 text-4xl text-redCustom px-4 text-balance font-normal ">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      <article className="bg-blackCustom py-12 ">
+        <p className="font-text2 text-4xl text-grayCustom px-4 text-balance font-normal ">
+          Lorem, ipsum dolor sit amet <span className="text-redCustom">consectetur adipisicing elit.</span>
         </p>
-        <div className="h-3 w-full bg-grayCustom mt-3"></div>
       </article>
       {/* images-section */}
-      <section></section>
+     
+      <section className="min-h-screen">
+
+      </section>
+     
+      <footer className="mt-9 px-3">
+        <p className="text-sm font-text2 ">
+          Actualmente, se desempeña en el montaje de arte y museografía para
+          distintos museos y salas de arte en Chile, destacándose como
+          montajista del Festival Internacional de Fotografía de Valparaíso
+          (FIFV) desde 2018. El año 2024 es parte del equipo de montajistas de
+          la "Bienal de Artes Internacional de Valparaíso" en colaboración con
+          FAGNES. A lo largo de su carrera, ha logrado una integración única de
+          su formación artística con su conocimiento en ingeniería, habiendo
+          cursado estudios en ingeniería en construcción, electromecánica,
+          robótica y fotografía, lo que le permite aportar una visión técnica
+          innovadora y multidisciplinaria a sus proyectos artísticos.{" "}
+        </p>
+      </footer>
     </section>
   );
 };
