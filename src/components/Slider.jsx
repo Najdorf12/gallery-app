@@ -19,7 +19,7 @@ export default function Slider({ images }) {
             centeredSlides={true}
             initialSlide={3}
             slidesPerView={"auto"}
-            spaceBetween={windWidth < 1000 ? 40 : 60 }
+            spaceBetween={windWidth < 1000 ? 40 : 60  }
             coverflowEffect={{
               rotate: 25,
               stretch: 0,
