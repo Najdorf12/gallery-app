@@ -8,12 +8,7 @@ import icon5 from "/icons/icon3.jpeg";
 import TsParticlesBg from "../components/TsParticlesBg";
 
 const cardsHomeData = [
-  {
-    id: "EduardoHinojosa",
-    icon: icon1,
-    name: "Eduardo Hinojosa",
-    content: "Lorem ipsum dolor sit",
-  },
+
   {
     id: "LauraAguirre",
     icon: icon2,
@@ -25,6 +20,12 @@ const cardsHomeData = [
     icon: icon3,
     name: "Claudio Alvarex",
     content: "Osos Poéticos filosóficos",
+  },
+  {
+    id: "EduardoHinojosa",
+    icon: icon1,
+    name: "Eduardo Hinojosa",
+    content: "Lorem ipsum dolor sit",
   },
   {
     id: "VarasMackenzie",
@@ -48,10 +49,10 @@ const Home = () => {
         <Navbar />
 
         <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
-          <h1 className="august-bold leading-none text-transparent bg-gradient-to-b bg-clip-text from-grayCustom via-grayCustom to-zinc-700 text-9xl lg:text-[16rem] xl:text-[19rem] 2xl:text-[22rem]">
+          <h1 className="august-bold leading-none text-transparent bg-gradient-to-b bg-clip-text from-grayCustom via-grayCustom to-zinc-700 text-9xl lg:text-[16rem] xl:text-[18rem] 2xl:text-[22rem]">
             ART GALLERY
           </h1>
-          <p className="text-sm  text-grayCustom font-text2 text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1370px] xl:text-xl  2xl:text-xl">
+          <p className="text-sm  text-grayCustom font-text2 text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1370px] xl:text-lg  2xl:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             facilis tempora est deserunt nulla doloremque ipsa molestias quasi
             magnam neque minima suscipit impedit animi labore ipsam, velit
