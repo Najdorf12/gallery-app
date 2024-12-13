@@ -13,7 +13,7 @@ const GalleryArtist = ({ obra }) => {
 
   return (
     <>
-      <section className="flex flex-col  lg:flex-row  my-16  ">
+      <section className="flex flex-col  lg:flex-row  my-16 lg:min-h-[80vh] lg:my-28  ">
         <figure
           className="w-full px-[2px] flex justify-center items-center lg:w-1/2 "
           onClick={() => handleImageClick(obra?.image)}
