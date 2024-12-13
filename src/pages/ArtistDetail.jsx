@@ -41,11 +41,11 @@ const ArtistDetail = ({ artistsData }) => {
 
         <div className=" mt-12 pl-3 text-balance font-medium text-grayCustom font-title text-4xl max-w-[700px] ">
           <article className="h-full">
-            Lorem, ipsum dolor sit{" "}
+            Lorem, ipsum dolor sit  amet consectetur adipisicing elit.{" "}
             <span className="text-redCustom">
-              amet consectetur adipisicing elit.{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
             </span>
-            Lorem, ipsum dolor sit amet
+             Natus ipsa culpa in voluptas, repellendus nesciunt possimus
           </article>
         </div>
       </article>
