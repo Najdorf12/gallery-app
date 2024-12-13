@@ -38,7 +38,7 @@ const GalleryArtist = ({ obra }) => {
               </p>
             </div>
            
-            <div className="col-span-2 w-full bg-blackCustom border-l-[2px] border-grayCustom pl-3 font-text2 flex items-end text-grayCustom">
+            <div className="col-span-2 w-full bg-grayCustom border-l-[2px] border-grayCustom pl-3 font-text2 flex items-end text-whiteCustom">
               {obra?.description?.detail5}
             </div>
           </div>
