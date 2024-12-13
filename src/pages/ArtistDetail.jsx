@@ -1,21 +1,23 @@
 import { useParams, Link } from "react-router-dom";
 import Slider from "../components/Slider";
 import GalleryArtist from "../components/GalleryArtist";
-import { useEffect } from "react";
+import TsParticlesBg2 from "../components/TsParticlesBg2";
+
 
 const ArtistDetail = ({ artistsData }) => {
   const { id } = useParams();
   const artist = artistsData.find((artist) => artist.id === id);
 
   return (
-    <section className="bg-whiteCustom pt-14 overflow-hidden lg:pt-6">
+    <section className="bg-whiteCustom pt-14 overflow-hidden lg:pt-6 relative z-50">
+      <TsParticlesBg2 />
       <Link to={"/"}>
         <nav className="absolute top-2  right-4 font-text font-semibold text-lg text-grayCustom border-l-[2px] border-redCustom py-[2px] pl-2">
           Volver
         </nav>
       </Link>
 
-      <article className="flex flex-col text-balance text-start">
+      <article className="flex flex-col text-balance text-start relative z-50">
         <h4 className="text-[8rem] leading-[8rem] font-normal tracking-wide august-bold text-blackCustom pl-4">
           {artist?.firstname} <br className="lg:hidden"/>
           <span className="text-redCustom">{artist?.lastname}</span>
@@ -25,7 +27,7 @@ const ArtistDetail = ({ artistsData }) => {
         </div>
       </article>
 
-      <article className="bg-blackCustom pt-6 pb-5 text-balance">
+      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative">
         <div className="bg-blackCustom  px-4 font-text2 font-normal ">
           <p className="text-whiteCustom text-sm  ">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
@@ -52,7 +54,7 @@ const ArtistDetail = ({ artistsData }) => {
         ))}
       </section>
 
-      <footer className="mt-9 px-3">
+      <footer className="mt-9 px-3 z-50 relative">
         <p className="text-sm font-text2 ">
           Actualmente, se desempeña en el montaje de arte y museografía para
           distintos museos y salas de arte en Chile, destacándose como
