@@ -13,65 +13,66 @@ const GalleryArtist = ({ obra }) => {
 
   return (
     <>
-      <section className="flex flex-col gap-12 lg:flex-row py-1">
+      <section className="flex flex-col  lg:flex-row my-12 ">
         <figure
-          className="w-full px-2 flex justify-center items-center lg:w-1/2"
+          className="w-full px-[2px] flex justify-center items-center lg:w-1/2 "
           onClick={() => handleImageClick(obra?.image)}
         >
           <img
             src={obra?.image}
             alt="img-gallery"
-            className="object-contain object-center w-full h-full max-w-[500px] xl:max-w-[550px] cursor-pointer"
+            className="object-contain object-center w-full h-full max-w-[500px] xl:max-w-[550px] cursor-pointer rounded-sm"
           />
         </figure>
 
-        <section className="px-2">
+        <section className="px-2  mt-6">
           {/* 01 */}
-          <div className="relative w-[200px] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-            <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
-            <h6 className="text-grayCustom font-text2 text-base mt-7 lg:text-lg lg:mt-9">
+          <div className="relative w-[200px] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md ">
+            <i className="bx bx-fullscreen text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
+            <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9">
               Philosophy
             </h6>
-            <p className="text-balance pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
+            <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
               {obra?.description?.detail1}
             </p>
           </div>
           {/* 02 */}
           <div className="relative w-full bg-grayCustom border-[1px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-            <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
-            <h6 className="text-whiteCustom font-text2 text-base mt-7 lg:text-lg">
+            <i className="bx bxs-color text-3xl -ml-1 text-whiteCustom lg:text-4xl"></i>
+            <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
               Anatomy
             </h6>
-            <p className="text-balance pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
+            <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
               {obra?.description?.detail2}
             </p>
           </div>
           {/* 03 */}
           <div className="flex gap-1">
             <div className="relative w-[33.33%] bg-whiteCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-              <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
-              <h6 className="text-grayCustom font-text2 text-base mt-7 lg:text-lg">
+              <i className="bx bx-expand-alt  text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
+              <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg">
                 History
               </h6>
-              <p className="text-balance pr-6 text-grayCustom font-text2 text-sm lg:text-base">
-                {obra?.description?.detail1}
+              <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                {obra?.description?.detail3}
               </p>
             </div>
+
             <div className="relative w-[33.33%] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-              <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
-              <h6 className="text-grayCustom font-text2 text-base mt-7 lg:text-lg">
+              <i className="bx bxs-paint text-4xl -ml-1 text-whiteCustom lg:text-4xl"></i>
+              <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg">
                 History
               </h6>
-              <p className="text-balance pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+              <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
                 {obra?.description?.detail4}
               </p>
             </div>
             <div className="relative w-[33.33%] bg-redCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-              <i className="bx bxs-color text-3xl -ml-1 text-blackCustom lg:text-4xl"></i>
-              <h6 className="text-whiteCustom font-text2 text-base mt-7 lg:text-lg">
+              <i className="bx bxs-color text-4xl -ml-1 text-grayCustom lg:text-4xl"></i>
+              <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
                 History
               </h6>
-              <p className="text-balance pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
+              <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
                 {obra?.description?.detail5}
               </p>
             </div>

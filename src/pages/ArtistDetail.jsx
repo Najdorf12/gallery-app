@@ -46,7 +46,7 @@ const ArtistDetail = ({ artistsData }) => {
         </div>
       </article>
 
-      <section className="mt-14">
+      <section className="">
         {artist?.obras?.map((obra, i) => (
           <GalleryArtist key={i} obra={obra} />
         ))}

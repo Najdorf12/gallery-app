@@ -48,9 +48,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -59,9 +59,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -70,9 +70,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -81,9 +81,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -92,9 +92,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
     ],
@@ -112,9 +112,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -123,9 +123,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -134,9 +134,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -145,9 +145,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -156,9 +156,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
     ],
@@ -176,9 +176,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -187,9 +187,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -198,9 +198,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -209,9 +209,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -220,9 +220,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
     ],
@@ -240,9 +240,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -251,9 +251,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -262,9 +262,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -273,9 +273,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -284,9 +284,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
     ],
@@ -304,9 +304,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -315,9 +315,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -326,9 +326,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -337,9 +337,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
       {
@@ -348,9 +348,9 @@ export const artistsData = [
         description: {
           detail1: "Lorem impsum dolor sit amet",
           detail2: "Lorem impsum dolor sit amet",
-          detail3: "Lorem impsum dolor sit amet",
-          detail4: "Lorem impsum dolor sit amet",
-          detail5: "Lorem impsum dolor sit amet",
+          detail3: "Lorem impsum",
+          detail4: "Lorem impsum",
+          detail5: "Lorem impsum",
         },
       },
     ],
