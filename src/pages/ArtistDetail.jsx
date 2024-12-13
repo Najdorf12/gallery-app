@@ -3,14 +3,13 @@ import Slider from "../components/Slider";
 import GalleryArtist from "../components/GalleryArtist";
 import TsParticlesBg2 from "../components/TsParticlesBg2";
 
-
 const ArtistDetail = ({ artistsData }) => {
   const { id } = useParams();
   const artist = artistsData.find((artist) => artist.id === id);
 
   return (
     <section className="bg-whiteCustom pt-14 overflow-hidden lg:pt-6  relative z-50">
-      <TsParticlesBg2 />
+      {/* <TsParticlesBg2 /> */}
       <Link to={"/"}>
         <nav className="absolute top-2  right-4 font-text font-semibold text-lg text-grayCustom border-l-[2px] border-redCustom py-[2px] pl-2">
           Volver
@@ -19,7 +18,7 @@ const ArtistDetail = ({ artistsData }) => {
 
       <article className="flex flex-col text-balance text-start relative z-50">
         <h4 className="text-[8rem] leading-[8rem] font-normal tracking-wide august-bold text-blackCustom pl-4 z-[500]  lg:text-[10rem] lg:pl-9 lg:leading-none">
-          {artist?.firstname} <br className="lg:hidden"/>
+          {artist?.firstname} <br className="lg:hidden" />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
         <div className="my-9 lg:mt-6 lg:mb-12">
@@ -27,8 +26,8 @@ const ArtistDetail = ({ artistsData }) => {
         </div>
       </article>
 
-      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative">
-        <div className="bg-blackCustom  px-4 font-text2 font-normal ">
+      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-16 lg:justify-center lg:items-center">
+        <div className="px-4 font-text2 font-normal flex flex-col max-w-[700px]">
           <p className="text-whiteCustom text-sm  ">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
             Playa Ancha y Ciencias de la Educación. Valparaíso, Chile
@@ -39,12 +38,15 @@ const ArtistDetail = ({ artistsData }) => {
             Chile, Argentina, México, Rumania, Francia, Italia y España{" "}
           </p>
         </div>
-        <div className=" mt-12 pl-3 text-balance font-medium text-grayCustom font-title text-4xl">
-          Lorem, ipsum dolor sit{" "}
-          <span className="text-redCustom">
-            amet consectetur adipisicing elit.{" "}
-          </span>
-          Lorem, ipsum dolor sit amet
+
+        <div className=" mt-12 pl-3 text-balance font-medium text-grayCustom font-title text-4xl max-w-[700px] ">
+          <article className="h-full">
+            Lorem, ipsum dolor sit{" "}
+            <span className="text-redCustom">
+              amet consectetur adipisicing elit.{" "}
+            </span>
+            Lorem, ipsum dolor sit amet
+          </article>
         </div>
       </article>
 
