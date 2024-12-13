@@ -57,7 +57,7 @@ const ArtistDetail = ({ artistsData }) => {
       </section>
 
       <footer>
-        <div className="mt-20 px-4 z-50 relative bg-blackCustom py-12 lg:pl-16 lg:max-w-[60%]">
+        <div className="mt-20 px-4 z-50 relative bg-blackCustom py-12 lg:pl-16 lg:max-w-[60%] lg:rounded-r-lg">
           <p className="text-sm font-text2 text-grayCustom text-balance">
             Actualmente, se desempeña en el montaje de arte y museografía para
             distintos museos y salas de arte en Chile, destacándose como
