@@ -39,13 +39,13 @@ const ArtistDetail = ({ artistsData }) => {
           </p>
         </div>
 
-        <div className=" mt-12 pl-3 text-balance font-medium text-grayCustom font-title text-4xl max-w-[700px] ">
+        <div className=" mt-12 pl-3 text-balance font-normal text-grayCustom font-text2 text-3xl max-w-[700px] ">
           <article className="h-full">
-            Lorem, ipsum dolor sit  amet consectetur adipisicing elit.{" "}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.{" "}
             <span className="text-redCustom">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+              Lorem ipsum dolor sit amet consectetur adipisic elit.{" "}
             </span>
-             Natus ipsa culpa in voluptas, repellendus nesciunt possimus
+            Natus ipsa culpa in voluptas, repellendus nesciunt possimus
           </article>
         </div>
       </article>
@@ -56,19 +56,30 @@ const ArtistDetail = ({ artistsData }) => {
         ))}
       </section>
 
-      <footer className="mt-16 px-3 z-50 relative bg-blackCustom py-12">
-        <p className="text-sm font-text2 text-grayCustom text-balance">
-          Actualmente, se desempeña en el montaje de arte y museografía para
-          distintos museos y salas de arte en Chile, destacándose como
-          montajista del Festival Internacional de Fotografía de Valparaíso
-          (FIFV) desde 2018. El año 2024 es parte del equipo de montajistas de
-          la "Bienal de Artes Internacional de Valparaíso" en colaboración con
-          FAGNES. A lo largo de su carrera, ha logrado una integración única de
-          su formación artística con su conocimiento en ingeniería, habiendo
-          cursado estudios en ingeniería en construcción, electromecánica,
-          robótica y fotografía, lo que le permite aportar una visión técnica
-          innovadora y multidisciplinaria a sus proyectos artísticos.{" "}
-        </p>
+      <footer>
+        <div className="mt-20 px-4 z-50 relative bg-blackCustom py-12 lg:pl-16 lg:max-w-[60%]">
+          <p className="text-sm font-text2 text-grayCustom text-balance">
+            Actualmente, se desempeña en el montaje de arte y museografía para
+            distintos museos y salas de arte en Chile, destacándose como
+            montajista del Festival Internacional de Fotografía de Valparaíso
+            (FIFV) desde 2018. El año 2024 es parte del equipo de montajistas de
+            la "Bienal de Artes Internacional de Valparaíso" en colaboración con
+            FAGNES. A lo largo de su carrera, ha logrado una integración única
+            de su formación artística con su conocimiento en ingeniería,
+            habiendo cursado estudios en ingeniería en construcción,
+            electromecánica, robótica y fotografía, lo que le permite aportar
+            una visión técnica innovadora y multidisciplinaria a sus proyectos
+            artísticos.{" "}
+          </p>
+        </div>
+        <div className=" py-12 text-balance text-start px-3 flex justify-end">
+          <p className="max-w-[700px] font-text text-grayCustom text-2xl lg:text-4xl ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sed
+            soluta dolorem totam odio deserunt quaerat assumenda veniam. Vitae
+            quod dolor minus, nemo autem ratione qui enim corrupti molestiae
+            fugit.
+          </p>
+        </div>
       </footer>
     </section>
   );
