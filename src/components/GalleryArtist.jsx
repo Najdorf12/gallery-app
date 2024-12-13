@@ -13,7 +13,7 @@ const GalleryArtist = ({ obra }) => {
 
   return (
     <>
-      <section className="flex flex-col  lg:flex-row my-12 ">
+      <section className="flex flex-col  lg:flex-row  my-16  ">
         <figure
           className="w-full px-[2px] flex justify-center items-center lg:w-1/2 "
           onClick={() => handleImageClick(obra?.image)}
@@ -25,56 +25,58 @@ const GalleryArtist = ({ obra }) => {
           />
         </figure>
 
-        <section className="px-2  mt-6">
+        <section className="px-2  mt-6  lg:w-1/2 flex flex-col items-center ">
           {/* 01 */}
-          <div className="relative w-[200px] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md ">
-            <i className="bx bx-fullscreen text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
-            <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9">
-              Philosophy
-            </h6>
-            <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
-              {obra?.description?.detail1}
-            </p>
-          </div>
-          {/* 02 */}
-          <div className="relative w-full bg-grayCustom border-[1px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-            <i className="bx bxs-color text-3xl -ml-1 text-whiteCustom lg:text-4xl"></i>
-            <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
-              Anatomy
-            </h6>
-            <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
-              {obra?.description?.detail2}
-            </p>
-          </div>
-          {/* 03 */}
-          <div className="flex gap-1">
-            <div className="relative w-[33.33%] bg-whiteCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-              <i className="bx bx-expand-alt  text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
-              <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg">
-                History
-              </h6>
-              <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
-                {obra?.description?.detail3}
-              </p>
-            </div>
-
-            <div className="relative w-[33.33%] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-              <i className="bx bxs-paint text-4xl -ml-1 text-whiteCustom lg:text-4xl"></i>
-              <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg">
-                History
-              </h6>
-              <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
-                {obra?.description?.detail4}
-              </p>
-            </div>
-            <div className="relative w-[33.33%] bg-redCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
-              <i className="bx bxs-color text-4xl -ml-1 text-grayCustom lg:text-4xl"></i>
-              <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
-                History
+          <div className="bg-white max-w-[650px] xl:w-[700px] 2xl:w-[800px]">
+            <div className="relative w-[200px] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md ">
+              <i className="bx bx-fullscreen text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
+              <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9">
+                Philosophy
               </h6>
               <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
-                {obra?.description?.detail5}
+                {obra?.description?.detail1}
               </p>
+            </div>
+            {/* 02 */}
+            <div className="relative w-full bg-grayCustom border-[1px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+              <i className="bx bxs-color text-3xl -ml-1 text-whiteCustom lg:text-4xl"></i>
+              <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
+                Anatomy
+              </h6>
+              <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
+                {obra?.description?.detail2}
+              </p>
+            </div>
+            {/* 03 */}
+            <div className="flex gap-1">
+              <div className="relative w-[33.33%] bg-whiteCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+                <i className="bx bx-expand-alt  text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
+                <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg">
+                  History
+                </h6>
+                <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                  {obra?.description?.detail3}
+                </p>
+              </div>
+
+              <div className="relative w-[33.33%] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+                <i className="bx bxs-paint text-4xl -ml-1 text-whiteCustom lg:text-4xl"></i>
+                <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg">
+                  History
+                </h6>
+                <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                  {obra?.description?.detail4}
+                </p>
+              </div>
+              <div className="relative w-[33.33%] bg-redCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+                <i className="bx bxs-color text-4xl -ml-1 text-grayCustom lg:text-4xl"></i>
+                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
+                  History
+                </h6>
+                <p className="text-balance leading-4 mt-1 pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
+                  {obra?.description?.detail5}
+                </p>
+              </div>
             </div>
           </div>
         </section>
