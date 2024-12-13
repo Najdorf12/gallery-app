@@ -123,7 +123,7 @@ canvas {
 @media(min-width:1300px){
   .swiper-slide {
     position: relative;
-    max-width: 470px;
+    max-width: 500px;
     aspect-ratio: 1/1;
     border-radius: 10px;
   }

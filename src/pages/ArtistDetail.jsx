@@ -9,7 +9,7 @@ const ArtistDetail = ({ artistsData }) => {
   const artist = artistsData.find((artist) => artist.id === id);
 
   return (
-    <section className="bg-whiteCustom pt-14 overflow-hidden lg:pt-6 relative z-50">
+    <section className="bg-whiteCustom pt-14 overflow-hidden lg:pt-6  relative z-50">
       <TsParticlesBg2 />
       <Link to={"/"}>
         <nav className="absolute top-2  right-4 font-text font-semibold text-lg text-grayCustom border-l-[2px] border-redCustom py-[2px] pl-2">
@@ -18,11 +18,11 @@ const ArtistDetail = ({ artistsData }) => {
       </Link>
 
       <article className="flex flex-col text-balance text-start relative z-50">
-        <h4 className="text-[8rem] leading-[8rem] font-normal tracking-wide august-bold text-blackCustom pl-4">
+        <h4 className="text-[8rem] leading-[8rem] font-normal tracking-wide august-bold text-blackCustom pl-4 z-[500]  lg:text-[10rem] lg:pl-9 lg:leading-none">
           {artist?.firstname} <br className="lg:hidden"/>
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
-        <div className="my-9 ">
+        <div className="my-9 lg:mt-6 lg:mb-12">
           <Slider obras={artist?.obras} />
         </div>
       </article>

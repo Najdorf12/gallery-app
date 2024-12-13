@@ -27,13 +27,13 @@ const GalleryArtist = ({ obra }) => {
 
         <section className="px-2  mt-6  lg:w-1/2 flex flex-col items-center lg:justify-center ">
           {/* 01 */}
-          <div className="white max-w-[650px] xl:w-[700px] 2xl:w-[800px]">
+          <div className="white max-w-[650px]  lg:w-[700px] 2xl:w-[800px]">
             <div className="relative w-[200px] blackCustom border  border-grayCustom  pl-3 flex flex-col  pt-1 pb-2 rounded-md ">
               <i className="bx bx-fullscreen text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
               <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9">
                 Philosophy
               </h6>
-              <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+              <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
                 {obra?.description?.detail1}
               </p>
             </div>
@@ -43,7 +43,7 @@ const GalleryArtist = ({ obra }) => {
               <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg">
                 Anatomy
               </h6>
-              <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+              <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
                 {obra?.description?.detail2}
               </p>
             </div>
@@ -54,7 +54,7 @@ const GalleryArtist = ({ obra }) => {
                 <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg">
                   History
                 </h6>
-                <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
                   {obra?.description?.detail3}
                 </p>
               </div>
@@ -64,7 +64,7 @@ const GalleryArtist = ({ obra }) => {
                 <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg">
                   History
                 </h6>
-                <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
                   {obra?.description?.detail4}
                 </p>
               </div>
@@ -73,7 +73,7 @@ const GalleryArtist = ({ obra }) => {
                 <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg">
                   History
                 </h6>
-                <p className="text-balance leading-4 mt-1 pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
                   {obra?.description?.detail5}
                 </p>
               </div>

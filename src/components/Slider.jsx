@@ -19,11 +19,11 @@ export default function Slider({ obras }) {
             centeredSlides={true}
             initialSlide={3}
             slidesPerView={"auto"}
-            spaceBetween={windWidth < 1000 ? 40 : 60  }
+            spaceBetween={windWidth < 1000 ? 40 : 120  }
             coverflowEffect={{
               rotate: 25,
               stretch: 0,
-              depth: 220,
+              depth: 270,
               modifier: 1,
               slideShadows: false,
             }}
