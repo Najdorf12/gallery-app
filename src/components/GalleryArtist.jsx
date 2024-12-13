@@ -25,7 +25,7 @@ const GalleryArtist = ({ obra }) => {
           />
         </figure>
 
-        <section className="px-2  mt-6  lg:w-1/2 flex flex-col items-center ">
+        <section className="px-2  mt-6  lg:w-1/2 flex flex-col items-center lg:justify-center ">
           {/* 01 */}
           <div className="bg-white max-w-[650px] xl:w-[700px] 2xl:w-[800px]">
             <div className="relative w-[200px] bg-blackCustom  border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md ">

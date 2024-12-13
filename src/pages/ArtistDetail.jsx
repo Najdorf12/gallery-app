@@ -16,7 +16,7 @@ const ArtistDetail = ({ artistsData }) => {
       </Link>
 
       <article className="flex flex-col text-balance text-start">
-        <h4 className="text-[8rem] leading-[8rem] font-semibold august-bold text-blackCustom pl-4">
+        <h4 className="text-[8rem] leading-[8rem] font-normal tracking-wide august-bold text-blackCustom pl-4">
           {artist?.firstname} <br />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>

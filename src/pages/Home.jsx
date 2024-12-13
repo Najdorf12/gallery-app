@@ -23,7 +23,7 @@ const Home = ({ artistData }) => {
           </p>
         </article>
 
-        <section className="relative z-50  flex flex-wrap mt-2 justify-center items-center gap-x-4 gap-y-5 w-full  lg:gap-x-6 xl:gap-x-9 2xl:gap-x-14 ">
+        <section className="relative z-50  flex flex-wrap mt-3 justify-center items-center gap-x-4 gap-y-5 w-full  lg:gap-x-6 xl:gap-x-9 2xl:gap-x-14 ">
           {artistsData?.map((artist, i) => (
             <CardsHome key={i} artist={artist} />
           ))}
