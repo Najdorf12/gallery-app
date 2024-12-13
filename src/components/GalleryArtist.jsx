@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const GalleryArtist = ({ obra }) => {
-  console.log(obra);
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -26,20 +25,55 @@ const GalleryArtist = ({ obra }) => {
           />
         </figure>
 
-        <section className="">
-          <div className="grid grid-cols-2 grid-rows-3 gap-1 text-balance px-3 ">
-            <div className="relative w-full bg-blackCustom border-l-[2px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md">
-              <i className="bx bxs-color text-3xl -ml-1 text-redCustom"></i>
-              <h6 className="text-grayCustom font-text2 text-base mt-7">
-                Philosophy
+        <section className="px-2">
+          {/* 01 */}
+          <div className="relative w-[200px] bg-blackCustom border-l-[2px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+            <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
+            <h6 className="text-grayCustom font-text2 text-base mt-7 lg:text-lg">
+              Philosophy
+            </h6>
+            <p className="text-balance pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+              {obra?.description?.detail1}
+            </p>
+          </div>
+          {/* 02 */}
+          <div className="relative w-[350px] bg-grayCustom border-l-[2px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+            <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
+            <h6 className="text-whiteCustom font-text2 text-base mt-7 lg:text-lg">
+              Anatomy
+            </h6>
+            <p className="text-balance pr-6 text-zinc-300 font-text2 text-sm lg:text-base">
+              {obra?.description?.detail2}
+            </p>
+          </div>
+          {/* 03 */}
+          <div className="flex gap-1">
+            <div className="relative w-[33.33%] bg-whiteCustom border-l-[2px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+              <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
+              <h6 className="text-grayCustom font-text2 text-base mt-7 lg:text-lg">
+                History
               </h6>
-              <p className="text-grayCustom font-text2 text-sm">
+              <p className="text-balance pr-6 text-grayCustom font-text2 text-sm lg:text-base">
                 {obra?.description?.detail1}
               </p>
             </div>
-           
-            <div className="col-span-2 w-full bg-grayCustom border-l-[2px] border-grayCustom pl-3 font-text2 flex items-end text-whiteCustom">
-              {obra?.description?.detail5}
+            <div className="relative w-[33.33%] bg-blackCustom border-l-[2px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+              <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
+              <h6 className="text-grayCustom font-text2 text-base mt-7 lg:text-lg">
+                History
+              </h6>
+              <p className="text-balance pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                {obra?.description?.detail4}
+              </p>
+            </div>
+            <div className="relative w-[33.33%] bg-redCustom border-l-[2px] border-grayCustom pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
+              <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
+              <h6 className="text-grayCustom font-text2 text-base mt-7 lg:text-lg">
+                History
+              </h6>
+              <p className="text-balance pr-6 text-grayCustom font-text2 text-sm lg:text-base">
+                {obra?.description?.detail5}
+              </p>
             </div>
           </div>
         </section>
