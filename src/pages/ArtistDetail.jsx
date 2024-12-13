@@ -54,8 +54,8 @@ const ArtistDetail = ({ artistsData }) => {
         ))}
       </section>
 
-      <footer className="mt-9 px-3 z-50 relative">
-        <p className="text-sm font-text2 ">
+      <footer className="mt-16 px-3 z-50 relative bg-blackCustom py-12">
+        <p className="text-sm font-text2 text-grayCustom text-balance">
           Actualmente, se desempeña en el montaje de arte y museografía para
           distintos museos y salas de arte en Chile, destacándose como
           montajista del Festival Internacional de Fotografía de Valparaíso
