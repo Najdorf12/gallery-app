@@ -1,11 +1,9 @@
 import Navbar from "../components/Navbar";
 import CardsHome from "../components/CardsHome";
-import {cardsHomeData} from "../data/artists";
-
-
 import TsParticlesBg from "../components/TsParticlesBg";
+import { artistsData } from "../data/artistsData";
 
-const Home = () => {
+const Home = ({ artistData }) => {
   return (
     <main className="relative w-full h-[100dvh] lg:h-screen z-50 flex flex-col justify-center items-center  bg-red-700">
       <TsParticlesBg />
@@ -26,8 +24,8 @@ const Home = () => {
         </article>
 
         <section className="relative z-50  flex flex-wrap mt-2 justify-center items-center gap-x-4 gap-y-5 w-full  lg:gap-x-6 xl:gap-x-9 2xl:gap-x-14 ">
-          {cardsHomeData.map((artist, i) => (
-              <CardsHome key={i} artist={artist} />
+          {artistsData?.map((artist, i) => (
+            <CardsHome key={i} artist={artist} />
           ))}
         </section>
       </div>

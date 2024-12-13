@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 import { EffectCoverflow, Pagination } from "swiper/modules";
 
-export default function Slider({ images }) {
+export default function Slider({ obras }) {
   const [windWidth, setWindWidth] = useState(window.innerWidth)
   return (
     <>
@@ -34,9 +34,9 @@ export default function Slider({ images }) {
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper"
           >
-            {images?.map((img,i) => (
+            {obras?.map((obra,i) => (
               <SwiperSlide>
-                <img src={img} />
+                <img src={obra?.image} />
               </SwiperSlide>
             ))}
           </Swiper>

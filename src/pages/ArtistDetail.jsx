@@ -1,12 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import Slider from "../components/Slider";
 import GalleryArtist from "../components/GalleryArtist";
-import { cardsHomeData } from "../data/artists";
 import { useEffect } from "react";
 
-const ArtistDetail = () => {
+const ArtistDetail = ({ artistsData }) => {
   const { id } = useParams();
-  const artist = cardsHomeData.find((artist) => artist.id === id);
+  const artist = artistsData.find((artist) => artist.id === id);
 
   return (
     <section className="bg-whiteCustom pt-14 overflow-hidden">
@@ -17,12 +16,12 @@ const ArtistDetail = () => {
       </Link>
 
       <article className="flex flex-col text-balance text-start">
-        <h4 className="text-[9rem] leading-[9rem] font-semibold august-bold text-blackCustom pl-4">
+        <h4 className="text-[8rem] leading-[8rem] font-semibold august-bold text-blackCustom pl-4">
           {artist?.firstname} <br />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
         <div className="my-9 ">
-          <Slider images={artist?.images} />
+          <Slider obras={artist?.obras} />
         </div>
       </article>
 
@@ -39,7 +38,7 @@ const ArtistDetail = () => {
           </p>
         </div>
         <div className=" mt-12 pl-3 text-balance font-medium text-grayCustom font-title text-4xl">
-          Lorem, ipsum dolor sit {" "}
+          Lorem, ipsum dolor sit{" "}
           <span className="text-redCustom">
             amet consectetur adipisicing elit.{" "}
           </span>
@@ -47,9 +46,10 @@ const ArtistDetail = () => {
         </div>
       </article>
 
-      {/* images-section */}
       <section className="min-h-screen pt-12">
-        <GalleryArtist images={artist?.images} />
+        {artist?.obras?.map((obra, i) => (
+          <GalleryArtist key={i} obra={obra} />
+        ))}
       </section>
 
       <footer className="mt-9 px-3">
