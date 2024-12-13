@@ -75,9 +75,7 @@ const ArtistDetail = ({ artistsData }) => {
         <div className=" py-12 text-balance text-start px-3 flex justify-end">
           <p className="max-w-[700px] font-text text-grayCustom text-2xl lg:text-4xl ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sed
-            soluta dolorem totam odio deserunt quaerat assumenda veniam. Vitae
-            quod dolor minus, nemo autem ratione qui enim corrupti molestiae
-            fugit.
+            soluta dolorem totam odio deserunt quaerat assumenda veniam.
           </p>
         </div>
       </footer>
