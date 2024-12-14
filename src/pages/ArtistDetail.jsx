@@ -26,7 +26,7 @@ const ArtistDetail = ({ artistsData }) => {
         </div>
       </article>
 
-      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-16 lg:justify-evenly lg:items-center">
+      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-14 lg:justify-evenly lg:items-center">
         <div className="px-4 font-text2 font-normal flex flex-col max-w-[700px]">
           <p className="text-whiteCustom text-sm 2xl:text-base">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
@@ -39,7 +39,7 @@ const ArtistDetail = ({ artistsData }) => {
           </p>
         </div>
 
-        <div className=" mt-12 pl-3 text-balance font-normal text-grayCustom font-text2 text-3xl max-w-[700px] 2xl:text-4xl ">
+        <div className=" mt-12 pl-3 text-balance font-normal text-grayCustom font-text text-3xl max-w-[700px] xl:text-4xl xl:mt-0">
           <article className="h-full">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.{" "}
             <span className="text-redCustom">
