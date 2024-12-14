@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 const Contact = () => {
   return (
-    <main className="relative  w-full h-[100dvh] lg:h-screen z-40 flex flex-col justify-center items-center bg-blackCustom overflow-hidden">
+    <section className="relative  w-full h-[100dvh] lg:h-screen z-40 flex flex-col justify-center items-center bg-blackCustom overflow-hidden">
        <TsParticlesBg /> 
       <Navbar />
       <div className="w-full h-[100dvh]  z-[550] relative flex flex-col justify-evenly items-center pt-4 ">
@@ -20,7 +20,7 @@ const Contact = () => {
           </p>
         </article>
       </div>
-    </main>
+    </section>
   );
 };
 
