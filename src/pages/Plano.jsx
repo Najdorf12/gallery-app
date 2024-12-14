@@ -32,7 +32,7 @@ const artistsBtns = [
 
 const Plano = () => {
   return (
-    <section className="flex flex-col  h-screen justify-evenly lg:flex-row lg:items-center">
+    <section className="flex flex-col  h-screen justify-evenly lg:flex-row lg:items-center px-3">
       <TsParticlesBg />
       <Navbar />
       <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] lg:self-start lg:mt-28 lg:pl-[5%]">
