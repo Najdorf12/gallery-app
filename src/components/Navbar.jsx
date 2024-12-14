@@ -12,9 +12,11 @@ const Navbar = () => {
         <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
           Plano
         </li>
-        <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
-          Registro
-        </li>
+        <Link to={"/registro"}>
+          <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
+            Registro
+          </li>
+        </Link>
         <Link to={"/proyecto"}>
           <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
             Proyecto
