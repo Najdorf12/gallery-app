@@ -7,16 +7,15 @@ import About from "../components/About";
 import WhatWeDo from "../components/WhatWeDo";
 
 const Project = () => {
-  const [activeArticle, setActiveArticle] = useState("project"); 
-  const containerRef = useRef(null); 
+  const [activeArticle, setActiveArticle] = useState("project");
+  const containerRef = useRef(null);
 
   const handleButtonClick = (newArticle) => {
-    
     gsap.to(containerRef.current, {
       opacity: 0,
       duration: 0.7,
       onComplete: () => {
-        setActiveArticle(newArticle); 
+        setActiveArticle(newArticle);
 
         gsap.fromTo(
           containerRef.current,
@@ -52,14 +51,14 @@ const Project = () => {
               <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
                 <button
                   onClick={() => handleButtonClick("about")}
-                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
                 >
                   ABOUT US
                   <img src={arrow} alt="arrow" className="w-3" />
                 </button>
                 <button
                   onClick={() => handleButtonClick("whatWeDo")}
-                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
                 >
                   WHAT WE DO
                   <img src={arrow} alt="arrow" className="w-3" />
@@ -68,11 +67,11 @@ const Project = () => {
             </article>
           )}
           {activeArticle === "whatWeDo" && (
-           <WhatWeDo handleButtonClick={handleButtonClick} />
+            <WhatWeDo handleButtonClick={handleButtonClick} />
           )}
 
           {activeArticle === "about" && (
-           <About  handleButtonClick={ handleButtonClick} />
+            <About handleButtonClick={handleButtonClick} />
           )}
         </div>
       </div>

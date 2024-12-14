@@ -15,14 +15,14 @@ const WhatWeDo = ({handleButtonClick}) => {
       <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
         <button
           onClick={() => handleButtonClick("about")}
-          className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+          className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
         >
           ABOUT US
           <img src={arrow} alt="arrow" className="w-3" />
         </button>
         <button
           onClick={() => handleButtonClick("project")}
-          className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+          className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
         >
           PROYECTO
           <img src={arrow} alt="arrow" className="w-3" />
