@@ -11,7 +11,7 @@ const Home = ({ artistData }) => {
         <Navbar />
 
         <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
-          <h1 className="august-bold leading-none text-grayCustom text-9xl lg:text-[16rem] xl:text-[18.2rem] 2xl:text-[22rem]">
+          <h1 className="august-bold leading-none bg-gradient-to-b bg-clip-text text-transparent from-grayCustom via-grayCustom to-zinc-300 text-9xl lg:text-[16rem] xl:text-[18.2rem] 2xl:text-[22rem]">
             ART GALLERY
           </h1>
           <p className="text-sm  text-grayCustom font-text2 font-medium text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1300px] xl:text-lg  2xl:text-xl">
