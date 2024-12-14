@@ -5,21 +5,21 @@ import Navbar from "../components/Navbar";
 import arrow from "/arrow.png";
 
 const Project = () => {
-  const [activeArticle, setActiveArticle] = useState("about"); // Estado para controlar qué artículo se muestra
-  const containerRef = useRef(null); // Referencia al contenedor para animar
+  const [activeArticle, setActiveArticle] = useState("project"); 
+  const containerRef = useRef(null); 
 
   const handleButtonClick = (newArticle) => {
-    // Animar salida
+    
     gsap.to(containerRef.current, {
       opacity: 0,
-      duration: 0.5,
+      duration: 0.7,
       onComplete: () => {
-        setActiveArticle(newArticle); // Cambiar el artículo activo
-        // Animar entrada
+        setActiveArticle(newArticle); 
+
         gsap.fromTo(
           containerRef.current,
           { opacity: 0 },
-          { opacity: 1, duration: 0.5 }
+          { opacity: 1, duration: 0.7 }
         );
       },
     });
@@ -31,7 +31,7 @@ const Project = () => {
       <Navbar />
       <div className="w-full z-[550] relative flex flex-col px-3 lg:pl-[5%]">
         <div ref={containerRef} className="relative">
-          {activeArticle === "about" && (
+          {activeArticle === "project" && (
             <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%]">
               <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
                 Focused on digital <br />
@@ -47,6 +47,22 @@ const Project = () => {
                 velit dolores accusamus iste. Lorem ipsum dolor sit amet
                 consectetur adipisicing elit.
               </p>
+              <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
+                <button
+                  onClick={() => handleButtonClick("about")}
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                >
+                  ABOUT US
+                  <img src={arrow} alt="arrow" className="w-3" />
+                </button>
+                <button
+                  onClick={() => handleButtonClick("whatWeDo")}
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                >
+                  WHAT WE DO
+                  <img src={arrow} alt="arrow" className="w-3" />
+                </button>
+              </div>
             </article>
           )}
           {activeArticle === "whatWeDo" && (
@@ -62,24 +78,54 @@ const Project = () => {
                 solutions. We provide cutting-edge strategies to empower your
                 brand online.
               </p>
+              <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
+                <button
+                  onClick={() => handleButtonClick("about")}
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                >
+                  ABOUT US
+                  <img src={arrow} alt="arrow" className="w-3" />
+                </button>
+                <button
+                  onClick={() => handleButtonClick("project")}
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                >
+                  PROYECTO
+                  <img src={arrow} alt="arrow" className="w-3" />
+                </button>
+              </div>
             </article>
           )}
-        </div>
-        <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10">
-          <button
-            onClick={() => handleButtonClick("about")}
-            className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
-          >
-            ABOUT US
-            <img src={arrow} alt="arrow" className="w-3" />
-          </button>
-          <button
-            onClick={() => handleButtonClick("whatWeDo")}
-            className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
-          >
-            WHAT WE DO
-            <img src={arrow} alt="arrow" className="w-3" />
-          </button>
+
+          {activeArticle === "about" && (
+            <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%]">
+              <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
+               ABOUT
+              </h1>
+             <div className="w-56 h-[1px] bg-grayCustom"></div>
+              <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl">
+                Discover our unique approach to building robust digital
+                solutions. We provide cutting-edge strategies to empower your
+                brand online. 
+              </p>
+              <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
+                <button
+                  onClick={() => handleButtonClick("whatWeDo")}
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                >
+                  WHAT WE DO
+                  <img src={arrow} alt="arrow" className="w-3" />
+                </button>
+                <button
+                  onClick={() => handleButtonClick("project")}
+                  className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg"
+                >
+                  PROYECTO
+                  <img src={arrow} alt="arrow" className="w-3" />
+                </button>
+              </div>
+            </article>
+          )}
         </div>
       </div>
     </section>
