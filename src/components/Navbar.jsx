@@ -9,9 +9,11 @@ const Navbar = () => {
             Inicio
           </li>
         </Link>
-        <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
-          Plano
-        </li>
+        <Link to={"/plano"}>
+          <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
+            Plano
+          </li>
+        </Link>
         <Link to={"/registro"}>
           <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
             Registro

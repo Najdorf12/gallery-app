@@ -1,3 +1,5 @@
+import TsParticlesBg from "../components/TsParticlesBg";
+import Navbar from "../components/Navbar";
 import arrow from "/arrow.png";
 
 const artistsBtns = [
@@ -28,9 +30,11 @@ const artistsBtns = [
   },
 ];
 
-const About = ({ handleButtonClick }) => {
+const Plano = () => {
   return (
     <section className="flex flex-col  h-screen justify-evenly lg:flex-row lg:items-center">
+      <TsParticlesBg />
+      <Navbar />
       <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] lg:self-start lg:mt-28">
         <h1 className="august-bold leading-none text-zinc-300 text-8xl lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem]">
           ABOUT
@@ -42,14 +46,14 @@ const About = ({ handleButtonClick }) => {
         </p>
         <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
           <button
-            onClick={() => handleButtonClick("whatWeDo")}
-            className="flex justify-center items-center gap-3 text-whiteCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500 "
+            /*   onClick={() => handleButtonClick("whatWeDo")} */
+            className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
           >
             WHAT WE DO
             <img src={arrow} alt="arrow" className="w-3" />
           </button>
           <button
-            onClick={() => handleButtonClick("project")}
+            /*    onClick={() => handleButtonClick("project")} */
             className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
           >
             PROYECTO
@@ -59,8 +63,13 @@ const About = ({ handleButtonClick }) => {
       </article>
       <ul className="flex flex-col gap-1 relative z-50 w-full mt-6 lg:self-end lg:pb-3">
         {artistsBtns?.map((artist, i) => (
-          <li key={i} className="flex  border-b border-grayCustom py-2 max-w-[500px] lg:max-w-[700px]">
-            <p className="august-bold text-zinc-300 text-5xl w-[70%] lg:text-6xl xl:text-7xl 2xl:text-8xl">{artist?.name.toLocaleUpperCase()}</p>
+          <li
+            key={i}
+            className="flex  border-b border-grayCustom py-2 max-w-[500px] lg:max-w-[700px]"
+          >
+            <p className="august-bold text-zinc-300 text-5xl w-[70%] lg:text-6xl xl:text-7xl 2xl:text-8xl">
+              {artist?.name.toLocaleUpperCase()}
+            </p>
             <div className="flex flex-col justify-between text-grayCustom text-sm font-text xl:text-base">
               {artist?.data1}
               <div>{artist?.data2}</div>
@@ -72,4 +81,4 @@ const About = ({ handleButtonClick }) => {
   );
 };
 
-export default About;
+export default Plano;
