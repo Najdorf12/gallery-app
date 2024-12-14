@@ -22,7 +22,7 @@ const Registro = () => {
       <Navbar />
       <div className="w-full h-[100dvh]  z-[550] relative flex flex-col mt-20 pt-4 ">
         <article className="flex flex-col justify-center items-center relative z-50 px-3 w-full cursor-default max-w-[800px]">
-          <p className="august-bold text-balance leading-[4rem] text-zinc-300 text-6xl ">
+          <p className="august-bold text-center text-balance leading-[4rem] text-zinc-300 text-6xl ">
             Lorem ipsum dolor sit amet{" "}
             <span className="text-redCustom">consectetur adipisicing</span>{" "}
             elit. Nisi facilis tempora est deserunt
