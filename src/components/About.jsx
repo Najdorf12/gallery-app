@@ -3,34 +3,34 @@ import arrow from "/arrow.png";
 const artistsBtns = [
   {
     name: "Laura Aguirre",
-    data1: "Lorem impsum dolor sit amet",
-    data2: "Lorem impsum dolor sit amet",
+    data1: "Lorem impsum",
+    data2: "Lorem impsum",
   },
   {
     name: "Claudio Alvarez",
-    data1: "Lorem impsum dolor sit amet",
-    data2: "Lorem impsum dolor sit amet",
+    data1: "Lorem impsum",
+    data2: "Lorem impsum",
   },
   {
     name: "Eduardo Hinojosa",
-    data1: "Lorem impsum dolor sit amet",
-    data2: "Lorem impsum dolor sit amet",
+    data1: "Lorem impsum",
+    data2: "Lorem impsum",
   },
   {
     name: "Sebastian Varas",
-    data1: "Lorem impsum dolor sit amet",
-    data2: "Lorem impsum dolor sit amet",
+    data1: "Lorem impsum",
+    data2: "Lorem impsum",
   },
   {
     name: "Bisy Lorem",
-    data1: "Lorem impsum dolor sit amet",
-    data2: "Lorem impsum dolor sit amet",
+    data1: "Lorem impsum",
+    data2: "Lorem impsum",
   },
 ];
 
 const About = ({ handleButtonClick }) => {
   return (
-    <section>
+    <section className="">
       <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%]">
         <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
           ABOUT
@@ -57,7 +57,17 @@ const About = ({ handleButtonClick }) => {
           </button>
         </div>
       </article>
-      <ul className="flex flex-col">li</ul>
+      <ul className="flex flex-col gap-1 relative z-50 w-full mt-20">
+        {artistsBtns?.map((artist, i) => (
+          <li key={i} className="flex  border-b border-grayCustom py-2">
+            <p className="august-bold text-zinc-300 text-5xl w-[70%]">{artist?.name.toLocaleUpperCase()}</p>
+            <div className="flex flex-col justify-between text-grayCustom text-sm font-text">
+              {artist?.data1}
+              <div>{artist?.data2}</div>
+            </div>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
