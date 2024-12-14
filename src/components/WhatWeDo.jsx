@@ -8,9 +8,9 @@ const WhatWeDo = ({handleButtonClick}) => {
       </h1>
       <div className="w-80 h-[1px] bg-grayCustom mt-3 lg:w-[600px] lg:mt-6"></div>
       
-      <p className="text-sm  text-grayCustom font-text2 font-medium  text-balance pr-9 mt-6 lg:text-base lg:mt-6 max-w-[380px] xl:text-lg 2xl:text-xl lg:max-w-[650px] ">
+      <p className="text-sm  text-grayCustom font-text2 font-medium  text-balance pr-9 mt-6 lg:text-base lg:mt-6 max-w-[380px] xl:text-lg 2xl:text-xl lg:max-w-[700px] ">
         Discover our unique approach to building robust digital solutions. We
-        provide cutting-edge strategies to empower your brand online. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis eaque blanditiis architecto fugiat veritatis voluptatem odit, temporibus, aut cumque assumenda cupiditate hic natus laudantium accusamus obcaecati pariatur nobis laborum et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nobis. At, magnam voluptatum architecto, odio nesciunt possimus hic inventore a incidunt perferendis corporis. Perspiciatis, sit quaerat dolore eaque laudantium voluptatibus! 
+        provide cutting-edge strategies to empower your brand online. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis eaque blanditiis architecto fugiat veritatis voluptatem odit, temporibus, aut cumque assumenda cupiditate hic natus laudantium accusamus obcaecati pariatur nobis laborum et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nobis.
       </p>
       <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
         <button
