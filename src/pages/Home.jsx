@@ -5,7 +5,7 @@ import { artistsData } from "../data/artistsData";
 
 const Home = ({ artistData }) => {
   return (
-    <main className="relative w-full h-[100dvh] lg:h-screen z-50 flex flex-col justify-center items-center">
+    <main className="relative w-full h-[100dvh] lg:h-screen z-50 flex flex-col justify-center items-center overflow-hidden">
       <TsParticlesBg />
       <div className="w-full h-[100dvh] lg:h-screen z-[550] relative flex flex-col justify-evenly items-center pt-4 ">
         <Navbar />
