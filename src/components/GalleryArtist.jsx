@@ -25,7 +25,7 @@ const GalleryArtist = ({ obra, reverse }) => {
           <img
             src={obra?.image}
             alt="img-gallery"
-            className="object-contain object-center w-full h-full max-w-[500px] xl:max-w-[550px] 2xl:max-w-[650px]  cursor-pointer rounded-sm"
+            className="object-contain object-center w-full h-full max-w-[500px] xl:max-w-[550px] 2xl:max-w-[650px]  cursor-zoom-in rounded-sm"
           />
         </figure>
         {selectedImage && (
