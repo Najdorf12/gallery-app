@@ -58,7 +58,7 @@ const ArtistDetail = ({ artistsData }) => {
       
       <footer>
         <div className="mt-20 px-4 z-50 relative bg-blackCustom py-12 lg:pl-16 lg:max-w-[60%] lg:rounded-r-lg">
-          <p className="text-sm font-text2 text-grayCustom text-balance">
+          <p className="text-sm font-text2 text-grayCustom text-balance xl:pr-12 2xl:text-base ">
             Actualmente, se desempeña en el montaje de arte y museografía para
             distintos museos y salas de arte en Chile, destacándose como
             montajista del Festival Internacional de Fotografía de Valparaíso
@@ -72,7 +72,7 @@ const ArtistDetail = ({ artistsData }) => {
             artísticos.{" "}
           </p>
         </div>
-        <div className=" py-12 text-balance text-start px-3 flex justify-end">
+        <div className=" py-12 text-balance text-start px-3 flex justify-end xl:py-20">
           <p className="max-w-[700px] font-text text-grayCustom text-2xl lg:text-4xl ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sed
             soluta dolorem totam odio deserunt quaerat assumenda veniam.
