@@ -6,7 +6,7 @@ const WhatWeDo = ({handleButtonClick}) => {
       <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
         What we do
       </h1>
-      <div className="w-80 h-[1px] bg-grayCustom mt-3"></div>
+      <div className="w-9 h-[1px] bg-grayCustom mt-3"></div>
       
       <p className="text-sm  text-grayCustom font-text2 font-medium  text-balance pr-9 mt-6 lg:text-base lg:mt-6 max-w-[380px] xl:text-lg 2xl:text-xl ">
         Discover our unique approach to building robust digital solutions. We
