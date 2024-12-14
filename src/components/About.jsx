@@ -60,8 +60,8 @@ const About = ({ handleButtonClick }) => {
       <ul className="flex flex-col gap-1 relative z-50 w-full mt-6 lg:self-end lg:pb-3">
         {artistsBtns?.map((artist, i) => (
           <li key={i} className="flex  border-b border-grayCustom py-2 max-w-[500px] lg:max-w-[700px]">
-            <p className="august-bold text-zinc-300 text-5xl w-[70%] lg:text-6xl">{artist?.name.toLocaleUpperCase()}</p>
-            <div className="flex flex-col justify-between text-grayCustom text-sm font-text">
+            <p className="august-bold text-zinc-300 text-5xl w-[70%] lg:text-6xl xl:text-7xl">{artist?.name.toLocaleUpperCase()}</p>
+            <div className="flex flex-col justify-between text-grayCustom text-sm font-text xl:text-base">
               {artist?.data1}
               <div>{artist?.data2}</div>
             </div>
