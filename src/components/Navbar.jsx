@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,9 +13,11 @@ const Navbar = () => {
         <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
           Proyecto
         </li>
-        <li className="text-whiteCustom duration-700 cursor-pointer hover:scale-110">
-          Contacto
-        </li>
+        <Link to={"/contacto"}>
+          <li className="text-whiteCustom duration-700 cursor-pointer hover:scale-110">
+            Contacto
+          </li>
+        </Link>
         {/*  <li className="hover:text-whiteCustom duration-700 cursor-pointer hover:scale-110">
           Sobre Nosotros
         </li> */}

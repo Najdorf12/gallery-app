@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CardsHome = ({ artist }) => {
   return (
-    <Link to={`/${artist?.id}`}>
+    <Link to={`/artist/${artist?.id}`}>
       <div className="relative z-50 border-l-[2px] border-b-[2px] border-stone-700 w-[180px] rounded-sm h-[114px] pl-3 pt-2  lg:pl-3 lg:w-[220px] lg:h-[133px] xl:w-[255px] xl:h-[152px]  2xl:w-[280px] 2xl:h-[178px] hover:border-stone-300 duration-700 cursor-pointer group">
         <figure>
           <img

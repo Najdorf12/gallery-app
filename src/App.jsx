@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import ArtistDetail from "./pages/ArtistDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { artistsData } from "./data/artistsData";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -10,8 +11,9 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home artistsData={artistsData} />} />
+          <Route path="/contacto" element={<Contact />} />
           <Route
-            path="/:id"
+            path="/artist/:id"
             element={<ArtistDetail artistsData={artistsData} />}
           />
         </Routes>

@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Slider from "../components/Slider";
 import GalleryArtist from "../components/GalleryArtist";
-import TsParticlesBg2 from "../components/TsParticlesBg2";
+/* import TsParticlesBg2 from "../components/TsParticlesBg2"; */
 
 const ArtistDetail = ({ artistsData }) => {
   const { id } = useParams();
