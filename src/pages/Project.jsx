@@ -28,7 +28,7 @@ const Project = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen z-40 flex flex-col pt-28 justify-start bg-blackCustom overflow-hidden xl:pt-20 2xl:pt-28">
+    <section className="relative w-full min-h-screen z-40 flex flex-col pt-28 justify-start bg-blackCustom overflow-hidden  2xl:pt-28">
       <TsParticlesBg />
       <Navbar />
       <div className="w-full z-[550] relative flex flex-col px-3 lg:pl-[5%]">

@@ -6,7 +6,7 @@ const About = ({ handleButtonClick}) => {
       <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
         ABOUT
       </h1>
-      <div className="w-6 h-[1px] bg-grayCustom mt-3"></div>
+      <div className="w-6 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
       <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl">
         Discover our unique approach to building robust digital solutions. We
         provide cutting-edge strategies to empower your brand online.
