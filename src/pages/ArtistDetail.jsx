@@ -26,20 +26,20 @@ const ArtistDetail = ({ artistsData }) => {
         </div>
       </article>
 
-      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-16 lg:justify-center lg:items-center">
+      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-16 lg:justify-evenly lg:items-center">
         <div className="px-4 font-text2 font-normal flex flex-col max-w-[700px]">
-          <p className="text-whiteCustom text-sm  ">
+          <p className="text-whiteCustom text-sm 2xl:text-base">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
             Playa Ancha y Ciencias de la Educación. Valparaíso, Chile
           </p>
-          <p className="text-balance text-start pr-6 text-grayCustom mt-3 text-sm">
+          <p className="text-balance text-start pr-6 text-grayCustom mt-3 text-sm 2xl:text-base">
             Con amplia experiencia como escenógrafo y montajista, ha trabajado
             desde 2016 con artistas de diversas partes del mundo, incluyendo
             Chile, Argentina, México, Rumania, Francia, Italia y España{" "}
           </p>
         </div>
 
-        <div className=" mt-12 pl-3 text-balance font-normal text-grayCustom font-text2 text-3xl max-w-[700px] ">
+        <div className=" mt-12 pl-3 text-balance font-normal text-grayCustom font-text2 text-3xl max-w-[700px] 2xl:text-4xl ">
           <article className="h-full">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.{" "}
             <span className="text-redCustom">
