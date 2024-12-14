@@ -20,8 +20,8 @@ const Registro = () => {
     <section className="relative  w-full min-h-screen z-40 flex flex-col  bg-blackCustom overflow-hidden pb-12">
       <TsParticlesBg />
       <Navbar />
-      <div className="w-full h-[100dvh]  z-[550] relative flex flex-col mt-20 pt-4 ">
-        <article className="flex flex-col justify-center items-center relative z-50 px-3 w-full cursor-default max-w-[800px]">
+      <div className="w-full h-[100dvh]  z-[550] relative flex flex-col mt-20 pt-4  items-center">
+        <article className="flex flex-col justify-center items-center relative z-50 px-1 w-full cursor-default max-w-[800px]">
           <p className="august-bold text-center text-balance leading-[4rem] text-zinc-300 text-6xl ">
             Lorem ipsum dolor sit amet{" "}
             <span className="text-redCustom">consectetur adipisicing</span>{" "}
