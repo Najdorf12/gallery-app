@@ -4,10 +4,10 @@ import arrow from "/arrow.png";
 
 const Project = () => {
   return (
-    <section className="relative w-full min-h-screen z-40 flex flex-col pt-28 justify-start bg-blackCustom overflow-hidden">
+    <section className="relative w-full min-h-screen z-40 flex flex-col pt-28 justify-start bg-blackCustom overflow-hidden xl:pt-20 2xl:pt-28">
       <TsParticlesBg />
       <Navbar />
-      <div className="w-full z-[550] relative flex flex-col  px-3 lg:pl-[10%]">
+      <div className="w-full z-[550] relative flex flex-col  px-3 lg:pl-[5%]">
         <article className="flex flex-col justify-start items-start relative z-50  w-full cursor-default lg:max-w-[60%]">
           <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem]  2xl:text-[10rem]">
             Focused on digital <br />
