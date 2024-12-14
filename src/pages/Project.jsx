@@ -28,13 +28,13 @@ const Project = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen z-40 flex flex-col pt-28 justify-start bg-blackCustom overflow-hidden  2xl:pt-28">
+    <section className="relative w-full h-screen z-40 flex flex-col justify-start  overflow-hidden">
       <TsParticlesBg />
       <Navbar />
-      <div className="w-full z-[550] relative flex flex-col px-3 lg:pl-[5%]">
+      <div className="w-full z-[550] relative flex flex-col px-3 lg:pl-[5%] h-full">
         <div ref={containerRef} className="relative">
           {activeArticle === "project" && (
-            <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%]">
+            <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] mt-20">
               <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
                 Focused on digital <br />
                 transforming brands

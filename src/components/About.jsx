@@ -30,12 +30,12 @@ const artistsBtns = [
 
 const About = ({ handleButtonClick }) => {
   return (
-    <section className="">
-      <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%]">
-        <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
+    <section className="flex flex-col  h-screen justify-evenly lg:flex-row lg:items-center">
+      <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] lg:self-start lg:mt-28">
+        <h1 className="august-bold leading-none text-zinc-300 text-8xl lg:text-[8rem] 2xl:text-[10rem]">
           ABOUT
         </h1>
-        <div className="w-6 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
+        <div className="w-12 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
         <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl">
           Discover our unique approach to building robust digital solutions. We
           provide cutting-edge strategies to empower your brand online.
@@ -57,10 +57,10 @@ const About = ({ handleButtonClick }) => {
           </button>
         </div>
       </article>
-      <ul className="flex flex-col gap-1 relative z-50 w-full mt-20">
+      <ul className="flex flex-col gap-1 relative z-50 w-full mt-6 lg:self-end lg:pb-3">
         {artistsBtns?.map((artist, i) => (
-          <li key={i} className="flex  border-b border-grayCustom py-2">
-            <p className="august-bold text-zinc-300 text-5xl w-[70%]">{artist?.name.toLocaleUpperCase()}</p>
+          <li key={i} className="flex  border-b border-grayCustom py-2 max-w-[500px] lg:max-w-[700px]">
+            <p className="august-bold text-zinc-300 text-5xl w-[70%] lg:text-6xl">{artist?.name.toLocaleUpperCase()}</p>
             <div className="flex flex-col justify-between text-grayCustom text-sm font-text">
               {artist?.data1}
               <div>{artist?.data2}</div>
