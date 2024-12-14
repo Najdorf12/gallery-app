@@ -32,7 +32,7 @@ const artistsBtns = [
 
 const Plano = () => {
   return (
-    <section className="flex flex-col  h-screen justify-evenly lg:flex-row lg:items-center px-3">
+    <section className="flex flex-col  h-screen justify-evenly lg:flex-row lg:items-center">
       <TsParticlesBg />
       <Navbar />
       <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] lg:self-start lg:mt-28 lg:pl-[5%]">
@@ -44,7 +44,22 @@ const Plano = () => {
           Discover our unique approach to building robust digital solutions. We
           provide cutting-edge strategies to empower your brand online.
         </p>
-        
+        <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
+          <button
+            /*   onClick={() => handleButtonClick("whatWeDo")} */
+            className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
+          >
+            WHAT WE DO
+            <img src={arrow} alt="arrow" className="w-3" />
+          </button>
+          <button
+            /*    onClick={() => handleButtonClick("project")} */
+            className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
+          >
+            PROYECTO
+            <img src={arrow} alt="arrow" className="w-3" />
+          </button>
+        </div>
       </article>
       <ul className="flex flex-col gap-1 relative z-50 w-full mt-6 lg:self-end lg:pb-3">
         {artistsBtns?.map((artist, i) => (

@@ -11,13 +11,13 @@ const ArtistDetail = ({ artistsData }) => {
     <section className="bg-whiteCustom pt-14 overflow-hidden lg:pt-6  relative z-50">
       {/* <TsParticlesBg2 /> */}
       <Link to={"/"}>
-        <nav className="absolute top-2  right-4 font-text font-semibold text-lg text-grayCustom border-l-[2px] border-redCustom py-[2px] pl-2">
+        <nav className="absolute top-2 z-[700]  right-4 font-text font-semibold text-lg text-blackCustom border-l-[2px] border-redCustom py-[2px] pl-2 lg:right-9 lg:top-3 lg:text-xl 2xl:text-2xl 2xl:right-12 2xl:top-4">
           Volver
         </nav>
       </Link>
 
       <article className="flex flex-col text-balance text-start relative z-50">
-        <h4 className="text-[8rem] leading-[8rem] font-normal tracking-wide august-bold text-blackCustom pl-4 z-[500]  lg:text-[10rem] lg:pl-9 lg:leading-none">
+        <h4 className="text-[8rem] leading-[8rem] font-medium august-bold text-blackCustom pl-4 z-[500]  lg:text-[10rem] lg:pl-9 lg:leading-none">
           {artist?.firstname} <br className="lg:hidden" />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
