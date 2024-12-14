@@ -19,20 +19,20 @@ const registroData = [
 ];
 const Registro = () => {
   return (
-    <section className="relative  w-full min-h-screen lg:h-screen z-40 flex flex-col  bg-blackCustom overflow-hidden pb-12 ">
+    <section className="relative  w-full  lg:h-screen z-40 flex flex-col  bg-blackCustom overflow-hidden pb-32 lg:pb-0 ">
       <TsParticlesBg />
       <Navbar />
       <div className="w-full h-[100dvh]  z-[550] relative flex flex-col mt-20 pt-4  items-center lg:flex-row lg:mt-0">
-        <article className="flex flex-col justify-center items-center relative z-50 px-1 w-full cursor-default max-w-[800px] lg:self-start  lg:mt-24">
-          <p className="august-bold text-center text-balance leading-[4rem] text-zinc-300 text-6xl lg:text-7xl lg:leading-[5rem]  2xl:text-8xl ">
+        <article className="flex flex-col justify-center items-center relative z-50 px-1 w-full cursor-default max-w-[800px] lg:self-start lg:w-[50%]  lg:mt-24">
+          <p className="august-bold text-center text-balance leading-[4rem] text-zinc-300 text-6xl lg:text-7xl lg:leading-[5rem]  2xl:text-8xl 2xl:leading-[6.5rem]">
             Lorem ipsum dolor sit amet{" "}
             <span className="text-redCustom">consectetur adipisicing</span>{" "}
             elit. Nisi facilis tempora est deserunt
           </p>
         </article>
-        <ul className=" py-12 flex flex-col justify-center items-center gap-2 px-2 ">
+        <ul className=" py-12 flex flex-col justify-center items-center gap-2 px-2 lg:w-[50%]">
           {registroData?.map((data, i) => (
-            <li key={i} className=" relative flex flex-col py-6 max-w-[650px] font-text2">
+            <li key={i} className=" relative flex flex-col py-6 max-w-[650px] font-text2 xl:max-w-[600px]">
               <p className="text-whiteCustom  pl-2 border">{data?.name}</p>
               <div className="text-grayCustom text-balance mt-3">{data?.data}</div>
               <div className="absolute z-50 -bottom-5 right-1 flex gap-3 justify-center items-center md:relative md:self-end text-grayCustom">
