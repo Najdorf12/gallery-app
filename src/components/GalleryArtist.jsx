@@ -1,19 +1,23 @@
 import { useState } from "react";
 
-const GalleryArtist = ({ obra }) => {
+const GalleryArtist = ({ obra, reverse }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
   };
 
-  const closeModal = () => {
+  const closeModal = ({ obra }) => {
     setSelectedImage(null);
   };
 
   return (
     <>
-      <section className="flex flex-col  lg:flex-row  my-16 lg:min-h-[80vh] lg:my-28 z-50 relative ">
+      <section
+        className={`flex flex-col lg:flex-row ${
+          reverse ? "lg:flex-row-reverse" : ""
+        } my-16 lg:min-h-[80vh] lg:my-28 z-50 relative`}
+      >
         <figure
           className="w-full px-[2px] flex justify-center items-center lg:w-1/2 "
           onClick={() => handleImageClick(obra?.image)}

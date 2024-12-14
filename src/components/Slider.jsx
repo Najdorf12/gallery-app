@@ -35,7 +35,7 @@ export default function Slider({ obras }) {
             className="mySwiper"
           >
             {obras?.map((obra,i) => (
-              <SwiperSlide>
+              <SwiperSlide key={i}>
                 <img src={obra?.image} />
               </SwiperSlide>
             ))}
