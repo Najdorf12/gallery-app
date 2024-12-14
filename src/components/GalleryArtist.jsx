@@ -29,26 +29,30 @@ const GalleryArtist = ({ obra, reverse }) => {
           />
         </figure>
         {selectedImage && (
-        <div className="fixed inset-0 w-full  bg-black bg-opacity-85 flex justify-center items-center z-50 overflow-hidden">
-          <button
-            className="absolute top-6 right-6 text-white text-2xl"
-            onClick={closeModal}
-          >
-            ✕
-          </button>
-          <div className="relative z-[900] flex justify-center items-center">
-            <img
-              src={selectedImage}
-              alt="Selected"
-              className="w-[98vw] object-contain lg:w-[80%] "
-            />
+          <div className="fixed inset-0 w-full  bg-black bg-opacity-85 flex justify-center items-center z-50 overflow-hidden">
+            <button
+              className="absolute top-6 right-6 text-white text-2xl"
+              onClick={closeModal}
+            >
+              ✕
+            </button>
+            <div className="relative z-[900] flex justify-center items-center">
+              <img
+                src={selectedImage}
+                alt="Selected"
+                className="w-[98vw] object-contain lg:w-[80%] "
+              />
+            </div>
           </div>
-        </div>
-      )}
+        )}
         <section className="px-2  mt-6  lg:w-1/2 flex flex-col items-center lg:justify-center relative">
           {/* 01 */}
-          <div className="white max-w-[650px]  lg:w-[700px] 2xl:w-[800px]">
-            <div className="relative w-[200px]  bg-blackCustom border  border-grayCustom  pl-3 flex flex-col  pt-1 pb-2 rounded-md ">
+          <div className="white max-w-[650px]  lg:w-[700px] 2xl:w-[800px] flex flex-col">
+            <div
+              className={`relative w-[200px]  bg-blackCustom border  border-grayCustom  pl-3 flex flex-col  pt-1 pb-2 rounded-md ${
+                reverse ? "self-end" : ""
+              }`}
+            >
               <i className="bx bx-fullscreen text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
               <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9">
                 Philosophy
@@ -100,10 +104,7 @@ const GalleryArtist = ({ obra, reverse }) => {
             </div>
           </div>
         </section>
-      
       </section>
-
-    
     </>
   );
 };
