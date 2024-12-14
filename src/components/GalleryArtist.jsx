@@ -47,14 +47,14 @@ const GalleryArtist = ({ obra, reverse }) => {
         )}
         <section className="px-2  mt-6  lg:w-1/2 flex flex-col items-center lg:justify-center relative">
           {/* 01 */}
-          <div className="white max-w-[650px]  lg:w-[700px] 2xl:w-[800px] flex flex-col">
+          <div className="white max-w-[650px]  lg:w-[700px] 2xl:w-[800px] flex flex-col ">
             <div
-              className={`relative w-[200px]  bg-blackCustom border  border-grayCustom  pl-3 flex flex-col  pt-1 pb-2 rounded-md ${
+              className={`relative w-[200px]  bg-blackCustom border  border-grayCustom  pl-3 flex flex-col  pt-1 pb-2 rounded-md lg:w-[250px] ${
                 reverse ? "self-end" : ""
               }`}
             >
               <i className="bx bx-fullscreen text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
-              <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9">
+              <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
                 Philosophy
               </h6>
               <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
@@ -64,7 +64,7 @@ const GalleryArtist = ({ obra, reverse }) => {
             {/* 02 */}
             <div className="relative w-full grayCustom border-[1px] border-grayCustom  pl-3 flex flex-col  pt-1 pb-2 rounded-md mt-1">
               <i className="bx bxs-color text-3xl -ml-1 text-redCustom lg:text-4xl"></i>
-              <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg">
+              <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
                 Anatomy
               </h6>
               <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
@@ -75,7 +75,7 @@ const GalleryArtist = ({ obra, reverse }) => {
             <div className="flex gap-1">
               <div className="relative w-[33.33%] bg-grayCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bx-expand-alt  text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
-                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
+                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
                   History
                 </h6>
                 <p className="text-balance leading-4  pr-6 text-blackCustom font-text2 text-sm lg:text-base">
@@ -85,7 +85,7 @@ const GalleryArtist = ({ obra, reverse }) => {
 
               <div className="relative w-[33.33%] bg-blackCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bxs-paint text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
-                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
+                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
                   History
                 </h6>
                 <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
@@ -94,7 +94,7 @@ const GalleryArtist = ({ obra, reverse }) => {
               </div>
               <div className="relative w-[33.33%] bg-redCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bxs-color text-4xl -ml-1 text-whiteCustom lg:text-4xl"></i>
-                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
+                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
                   History
                 </h6>
                 <p className="text-balance leading-4  pr-6 text-blackCustom font-text2 text-sm lg:text-base">
