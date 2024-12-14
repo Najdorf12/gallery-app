@@ -71,10 +71,10 @@ const GalleryArtist = ({ obra, reverse }) => {
             <div className="flex gap-1">
               <div className="relative w-[33.33%] bg-grayCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bx-expand-alt  text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
-                <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg">
+                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
                   History
                 </h6>
-                <p className="text-balance leading-4  pr-6 text-whiteCustom font-text2 text-sm lg:text-base">
+                <p className="text-balance leading-4  pr-6 text-blackCustom font-text2 text-sm lg:text-base">
                   {obra?.description?.detail3}
                 </p>
               </div>
@@ -90,10 +90,10 @@ const GalleryArtist = ({ obra, reverse }) => {
               </div>
               <div className="relative w-[33.33%] bg-redCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bxs-color text-4xl -ml-1 text-whiteCustom lg:text-4xl"></i>
-                <h6 className="text-grayCustom font-text2 text-base mt-6 lg:text-lg">
+                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg">
                   History
                 </h6>
-                <p className="text-balance leading-4  pr-6 text-whiteCustom font-text2 text-sm lg:text-base">
+                <p className="text-balance leading-4  pr-6 text-blackCustom font-text2 text-sm lg:text-base">
                   {obra?.description?.detail5}
                 </p>
               </div>
