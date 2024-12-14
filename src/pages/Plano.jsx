@@ -35,9 +35,9 @@ const Plano = () => {
     <section className="flex flex-col  h-screen justify-evenly lg:flex-row lg:items-center">
       <TsParticlesBg />
       <Navbar />
-      <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] lg:self-start lg:mt-28">
+      <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] lg:self-start lg:mt-28 lg:pl-[5%]">
         <h1 className="august-bold leading-none text-zinc-300 text-8xl lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem]">
-          ABOUT
+          PLANO
         </h1>
         <div className="w-12 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
         <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl 2xl:max-w-[700px]">
