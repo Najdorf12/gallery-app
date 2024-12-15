@@ -8,7 +8,7 @@ const ArtistDetail = ({ artistsData }) => {
   const artist = artistsData.find((artist) => artist.id === id);
 
   return (
-    <section className="bg-whiteCustom pt-14 overflow-hidden lg:pt-6  relative z-50">
+    <section className="bg-whiteCustom pt-10 overflow-hidden lg:pt-6  relative z-50">
       {/* <TsParticlesBg2 /> */}
       <Link to={"/"}>
         <nav className="absolute top-2 z-[700]  right-4 font-text font-semibold text-lg text-blackCustom border-l-[2px] border-redCustom py-[2px] pl-2 lg:right-9 lg:top-3 lg:text-xl 2xl:text-2xl 2xl:right-12 2xl:top-4">
