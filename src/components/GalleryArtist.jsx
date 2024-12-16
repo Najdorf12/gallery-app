@@ -16,7 +16,7 @@ const GalleryArtist = ({ obra, reverse }) => {
       <section
         className={`flex flex-col lg:flex-row relative ${
           reverse ? "lg:flex-row-reverse" : ""
-        } my-20  lg:my-28 z-50 relative`}
+        } my-20  lg:my-28 2xl:my-32 z-50 relative`}
       >
         <figure
           className="w-full px-[2px] flex justify-center items-center lg:w-1/2 "
