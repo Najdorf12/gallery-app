@@ -33,14 +33,14 @@ const Contact = () => {
 
   return (
     <>
-      <section className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-32 ">
+      <section className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
         <TsParticlesBg />
         <Navbar />
         <article className="z-50 text-center self-center lg:text-start lg:pl-[6%] lg:self-start  ">
-          <h6 className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  xl:text-[] 2xl:text-[]">
+          <h6 className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[12rem] 2xl:text-[]">
             CONTACTO
           </h6>
-          <p className="text-grayCustom font-text2 text-balance mt-5 text-sm px-2   lg:text-base">
+          <p className="text-grayCustom font-text2 text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
             autem ipsam maiores quas, ab perferendis soluta modi facere quia et?
@@ -65,7 +65,7 @@ const Contact = () => {
             style={{ animation: "slideInFromLeft 1s ease-out" }}
             className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-3  max-w-[500px]  "
           >
-            <form method="POST" action="#" className="py-9 xl:pt-12 flex flex-col gap-7">
+            <form method="POST" action="#" className="py-9  flex flex-col gap-7">
               <div className="relative">
                 <input
                   placeholder="john@example.com"
