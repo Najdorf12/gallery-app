@@ -75,7 +75,7 @@ const GalleryArtist = ({ obra, reverse }) => {
             <div className="flex gap-1">
               <div className="relative w-[33.33%] bg-whiteCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bx-expand-alt  text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
-                <h6 className="text-blackCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
+                <h6 className="text-blackCustom font-text2 text-base mt-7 lg:text-lg lg:mt-9 2xl:mt-12">
                   History
                 </h6>
                 <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
@@ -85,7 +85,7 @@ const GalleryArtist = ({ obra, reverse }) => {
 
               <div className="relative w-[33.33%] bg-blackCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bxs-paint text-4xl -ml-1 text-redCustom lg:text-4xl"></i>
-                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
+                <h6 className="text-whiteCustom font-text2 text-base mt-7 lg:text-lg lg:mt-9 2xl:mt-12">
                   History
                 </h6>
                 <p className="text-balance leading-4  pr-6 text-grayCustom font-text2 text-sm lg:text-base">
@@ -94,7 +94,7 @@ const GalleryArtist = ({ obra, reverse }) => {
               </div>
               <div className="relative w-[33.33%] bg-redCustom  border-grayCustom  pl-3 border flex flex-col  pt-1 pb-2 rounded-md mt-1">
                 <i className="bx bxs-color text-4xl -ml-1 text-whiteCustom lg:text-4xl"></i>
-                <h6 className="text-whiteCustom font-text2 text-base mt-6 lg:text-lg lg:mt-9 2xl:mt-12">
+                <h6 className="text-whiteCustom font-text2 text-base mt-7 lg:text-lg lg:mt-9 2xl:mt-12">
                   History
                 </h6>
                 <p className="text-balance leading-4  pr-6 text-blackCustom font-text2 text-sm lg:text-base">
