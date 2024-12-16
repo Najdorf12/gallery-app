@@ -29,7 +29,7 @@ const GalleryArtist = ({ obra, reverse }) => {
           />
         </figure>
         {selectedImage && (
-          <div className="fixed inset-0 w-full  bg-black bg-opacity-85 flex justify-center items-center z-50 overflow-hidden">
+          <div className="fixed inset-0 w-full  bg-black bg-opacity-85 flex justify-center items-center z-[1000] overflow-hidden">
             <button
               className="absolute top-6 right-6 text-white text-2xl z-[1000]"
               onClick={closeModal}
@@ -40,7 +40,7 @@ const GalleryArtist = ({ obra, reverse }) => {
               <img
                 src={selectedImage}
                 alt="Selected"
-                className="w-[98vw] object-contain lg:w-[80%] "
+                className="w-[98vw] object-contain lg:w-[70%] "
               />
             </div>
           </div>
