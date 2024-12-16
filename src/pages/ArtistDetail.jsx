@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Slider from "../components/Slider";
 import GalleryArtist from "../components/GalleryArtist";
-/* import TsParticlesBg2 from "../components/TsParticlesBg2"; */
+ import TsParticlesBg2 from "../components/TsParticlesBg2"; 
 
 const ArtistDetail = ({ artistsData }) => {
   const { id } = useParams();
@@ -9,7 +9,7 @@ const ArtistDetail = ({ artistsData }) => {
 
   return (
     <section className="bg-whiteCustom pt-10 overflow-hidden lg:pt-6  relative z-50">
-      {/* <TsParticlesBg2 /> */}
+    {/* <TsParticlesBg2 />  */}
       <Link to={"/"}>
         <nav className="absolute top-2 z-[700]  right-4 font-text font-semibold text-lg text-blackCustom border-l-[2px] border-redCustom py-[2px] pl-2 lg:right-9 lg:top-3 lg:text-xl 2xl:text-2xl 2xl:right-12 2xl:top-4">
           Volver
@@ -21,7 +21,7 @@ const ArtistDetail = ({ artistsData }) => {
           {artist?.firstname} <br className="lg:hidden" />
           <span className="text-redCustom">{artist?.lastname}</span>
         </h4>
-        <div className="my-9 lg:mt-6 lg:mb-12">
+        <div className="mt-4 mb-6 lg:mt-6 ">
           <Slider obras={artist?.obras} />
         </div>
       </article>
