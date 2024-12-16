@@ -65,7 +65,7 @@ const Contact = () => {
             style={{ animation: "slideInFromLeft 1s ease-out" }}
             className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-3  max-w-[500px]  "
           >
-            <form method="POST" action="#" className="py-9  flex flex-col gap-7 2xl:gap-9">
+            <form method="POST" action="#" className="py-8  flex flex-col gap-7 xl:gap-8 2xl:gap-9">
               <div className="relative">
                 <input
                   placeholder="john@example.com"
