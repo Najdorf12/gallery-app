@@ -16,7 +16,7 @@ const GalleryArtist = ({ obra, reverse }) => {
       <section
         className={`flex flex-col lg:flex-row relative ${
           reverse ? "lg:flex-row-reverse" : ""
-        } my-16 lg:min-h-[80vh] lg:my-28 z-50 relative`}
+        } my-20  lg:my-28 z-50 relative`}
       >
         <figure
           className="w-full px-[2px] flex justify-center items-center lg:w-1/2 "
@@ -40,7 +40,7 @@ const GalleryArtist = ({ obra, reverse }) => {
               <img
                 src={selectedImage}
                 alt="Selected"
-                className="w-[98vw] object-contain lg:w-[70%] "
+                className="w-[98vw] object-contain lg:w-[70%] rounded-sm"
               />
             </div>
           </div>
