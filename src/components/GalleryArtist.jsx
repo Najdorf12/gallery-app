@@ -31,7 +31,7 @@ const GalleryArtist = ({ obra, reverse }) => {
         {selectedImage && (
           <div className="fixed inset-0 w-full  bg-black bg-opacity-85 flex justify-center items-center z-50 overflow-hidden">
             <button
-              className="absolute top-6 right-6 text-white text-2xl"
+              className="absolute top-6 right-6 text-white text-2xl z-[1000]"
               onClick={closeModal}
             >
               ✕
