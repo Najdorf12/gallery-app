@@ -40,22 +40,22 @@ const Contact = () => {
           <h6 className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[]">
             CONTACTO
           </h6>
-          <p className="text-grayCustom font-text2 text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg">
+          <p className="text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
             autem ipsam maiores quas, ab perferendis soluta modi facere quia et?
           </p>
         </article>
 
-        <section className="w-full flex flex-col justify-center items-center mt-12 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28 2xl:mt-40">
+        <section className="w-full flex flex-col justify-center items-center mt-16 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28 2xl:mt-40">
           <article className="z-50 px-3 text-balance max-w-[500px]">
-            <div className="text-zinc-300 text-start self-start text-xl xl:text-2xl 2xl:text-3xl">
+            <div className="text-zinc-300  font-text2 text-start self-start text-xl xl:text-2xl 2xl:text-3xl">
               HABLEMOS AHORA
             </div>
             <div className="bg-grayCustom w-32 h-[2px] z-50 relative mt-2 xl:w-36 2xl:w-40"></div>
             <p
               style={{ animation: "appear 3s ease-out" }}
-              className="text-start text-zinc-400 text-sm mt-3  xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-7"
+              className="text-start font-text text-zinc-400 text-sm mt-3  xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-7"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
               mollitia, non cumque vel culpa nesciunt.
@@ -65,7 +65,7 @@ const Contact = () => {
             style={{ animation: "slideInFromLeft 1s ease-out" }}
             className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-3  max-w-[500px]  "
           >
-            <form method="POST" action="#" className="py-8  flex flex-col gap-7 xl:gap-8 2xl:gap-9">
+            <form method="POST" action="#" className="py-8 font-text  flex flex-col gap-7 xl:gap-8 2xl:gap-9">
               <div className="relative">
                 <input
                   placeholder="john@example.com"
