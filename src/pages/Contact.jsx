@@ -47,7 +47,7 @@ const Contact = () => {
           </p>
         </article>
 
-        <section className="w-full flex flex-col justify-center items-center mt-16 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28 2xl:mt-40">
+        <section className="w-full flex flex-col justify-center items-center mt-16 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28 xl:mt-40 2xl:mt-56">
           <article className="z-50 px-3 text-balance max-w-[500px]">
             <div className="text-zinc-300  font-text2 text-start self-start text-xl xl:text-2xl 2xl:text-3xl">
               HABLEMOS AHORA
