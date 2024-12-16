@@ -19,13 +19,13 @@ const Home = ({ artistData }) => {
             EXPOSICION COLECTIVA{" "}
             <span className="w-20 h-[1px] bg-stone-600 lg:w-[400px] xl:w-[500px]"></span>
           </div>
-         {/*  <p className="text-sm  text-grayCustom font-text2 font-medium text-center text-pretty px-2 mt-2 lg:text-base lg:text-balance xl:max-w-[1500px] 2xl:max-w-[1500px] xl:text-xl  2xl:text-2xl">
+           <p className="text-sm  text-grayCustom font-text2 font-medium text-center text-pretty px-2 mt-2 lg:text-base lg:text-balance xl:max-w-[1500px] 2xl:max-w-[1500px] xl:text-lg  2xl:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
             facilis tempora est deserunt nulla doloremque ipsa molestias quasi
             magnam neque minima suscipit impedit animi labore ipsam, velit
             dolores accusamus iste. Lorem ipsum dolor sit amet consectetur
             adipisicing elit.
-          </p> */}
+          </p> 
         </article>
 
         <section className="relative z-50  flex flex-wrap  justify-center items-center gap-x-4 gap-y-5 w-full lg:self-end  lg:gap-x-6 xl:gap-x-9 2xl:gap-x-14 ">
