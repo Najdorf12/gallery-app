@@ -1,26 +1,119 @@
+import { useForm } from "react-hook-form";
 import TsParticlesBg from "../components/TsParticlesBg";
 import Navbar from "../components/Navbar";
-
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = async (data) => {
+    /*   try {
+      const response = await fetch(
+        "https://xioami-backend.vercel.app/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+      const result = await response.json();
+      if (response.ok) {
+        console.log("Correo enviado:", result);
+      } else {
+        console.error("Error al enviar el correo:", result.error);
+      }
+    } catch (err) {
+      console.error("Error en la solicitud:", err);
+    } */
+  };
+
   return (
-    <section className="relative  w-full h-[100dvh] lg:h-screen z-40 flex flex-col justify-center items-center bg-blackCustom overflow-hidden">
-       <TsParticlesBg /> 
-      <Navbar />
-      <div className="w-full h-[100dvh]  z-[550] relative flex flex-col justify-evenly items-center pt-4 ">
-        <article className="flex flex-col justify-center items-center relative z-50  w-full cursor-default">
-          <h1 className="august-bold leading-none text-transparent bg-gradient-to-b bg-clip-text from-grayCustom via-grayCustom to-grayCustom text-9xl lg:text-[16rem] xl:text-[18rem] 2xl:text-[22rem]">
+    <>
+      <section className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-32 ">
+        <TsParticlesBg />
+        <Navbar />
+        <article className="z-50 text-center self-center lg:text-start lg:pl-[6%] lg:self-start  ">
+          <h6 className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  xl:text-[] 2xl:text-[]">
             CONTACTO
-          </h1>
-          <p className="text-sm  text-grayCustom font-text2 font-medium text-center text-pretty px-2 mt-4 lg:text-base lg:text-balance xl:max-w-[1000px] 2xl:max-w-[1300px] xl:text-lg  2xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            facilis tempora est deserunt nulla doloremque ipsa molestias quasi
-            magnam neque minima suscipit impedit animi labore ipsam, velit
-            dolores accusamus iste. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.
+          </h6>
+          <p className="text-grayCustom font-text2 text-balance mt-5 text-sm px-2   lg:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
+            autem ipsam maiores quas, ab perferendis soluta modi facere quia et?
           </p>
         </article>
-      </div>
-    </section>
+
+        <section className="w-full flex flex-col justify-center items-center mt-12 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28">
+          <article className="z-50 px-3 text-balance max-w-[500px]">
+            <div className="text-zinc-300 text-start self-start text-xl xl:text-2xl">
+              HABLEMOS AHORA
+            </div>
+            <div className="bg-grayCustom w-32 h-[2px] z-50 relative mt-2"></div>
+            <p
+              style={{ animation: "appear 3s ease-out" }}
+              className="text-start text-zinc-400 text-sm mt-3  xl:text-base xl:mt-5"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              mollitia, non cumque vel culpa nesciunt.
+            </p>
+          </article>
+          <div
+            style={{ animation: "slideInFromLeft 1s ease-out" }}
+            className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-3  max-w-[500px]  "
+          >
+            <form method="POST" action="#" className="py-9 xl:pt-12 flex flex-col gap-7">
+              <div className="relative">
+                <input
+                  placeholder="john@example.com"
+                  className="peer h-10 w-full border-b-2 border-stone-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-stone-600"
+                  required=""
+                  id="email"
+                  name="email"
+                  type="email"
+                />
+                <label
+                  className="absolute left-0 -top-3.5 text-grayCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-stone-600 peer-focus:text-sm"
+                  for="email"
+                >
+                  Email 
+                </label>
+              </div>
+              <div className="relative">
+                <textarea
+                  placeholder=""
+                  className="peer h-10 pt-2 w-full border-b-2 border-stone-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-stone-600"
+                  required=""
+                  
+                />
+                <label
+                  className="absolute left-0 -top-3.5 text-grayCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-stone-600 peer-focus:text-sm"
+                  for="password"
+                >
+                  Escribe tu mensaje
+                </label>
+              </div>
+
+              <button
+                className="w-full py-2 px-4 border border-stone-500 hover:border-whiteCustom hover:text-whiteCustom rounded-md text-zinc-300  font-semibold transition duration-500"
+                type="submit"
+              >
+                Enviar mensaje
+              </button>
+            </form>
+            <div className="text-center text-gray-300">
+              Don't have an account?
+              <a className="text-grayCustom pl-2 hover:underline" href="#">
+                Sign up
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </>
   );
 };
 
