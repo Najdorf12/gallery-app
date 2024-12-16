@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import TsParticlesBg from "../components/TsParticlesBg";
 import Navbar from "../components/Navbar";
 
+
 const Contact = () => {
   const {
     register,
@@ -31,17 +32,18 @@ const Contact = () => {
       console.error("Error en la solicitud:", err);
     } */
   };
+  
 
   return (
     <>
-      <section className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
+      <section  className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
         <TsParticlesBg />
         <Navbar />
-        <article className="z-50 text-center self-center lg:text-start lg:pl-[9%] lg:self-start  2xl:pl-[12%]">
-          <h6 className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]">
+        <article  className="z-50  text-center self-center lg:text-start lg:pl-[9%] lg:self-start  2xl:pl-[12%]">
+          <h6 id="split" className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]">
             CONTACTO
           </h6>
-          <p className="text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg">
+          <p  id="text-reveal2" className="text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
             autem ipsam maiores quas, ab perferendis soluta modi facere quia et?
