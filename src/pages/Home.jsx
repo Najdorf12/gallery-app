@@ -13,7 +13,7 @@ const Home = ({ artistData }) => {
 
   useEffect(() => {
     const timeline = gsap.timeline({
-      defaults: { duration: 1.1, ease: "power1" },
+      defaults: { duration: 1, ease: "power1" },
     });
 
     // Animar las líneas simultáneamente
@@ -40,9 +40,9 @@ const Home = ({ artistData }) => {
     // Animar el párrafo de descripción
     timeline.fromTo(
       descriptionRef.current,
-      { y: 30, opacity: 0 },
+      { y: 15, opacity: 0 },
       { y: 0, opacity: 1 },
-      "-=0.1" // Ajusta para solapar con la animación previa
+      "-=0.01" // Ajusta para solapar con la animación previa
     );
   }, []);
 
