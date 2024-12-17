@@ -28,25 +28,24 @@ const planosBtns = [
 
 const Plano = () => {
   return (
-    <section className="flex flex-col bg-blackCustom lg:items-center  overflow-hidden pb-12 lg:h-screen lg:pb-0 lg:justify-center">
+    <section className="flex flex-col bg-blackCustom overflow-hidden pb-12 lg:h-screen lg:pb-0 lg:justify-center gap-2">
       <TsParticlesBg />
       <Navbar />
-      <article className="flex flex-col px-3 justify-start items-start relative z-50 w-full cursor-default mt-14  lg:items-center lg:justify-between lg:mt-16  lg:flex-row">
-        <div className="lg:pl-[10%]">
+      <article className="flex flex-col px-3 justify-start items-start relative z-50 w-full cursor-default mt-14  lg:items-center lg:justify-evenly lg:mt-10 lg:w-full lg:flex-row">
+        <div className="">
           <h1 className="august-bold leading-none text-zinc-300  text-8xl  lg:text-[8rem] xl:text-[9.5rem] 2xl:text-[12rem]">
             PLANO
           </h1>
           <div className="w-12 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
         </div>
         <p className="text-sm relative text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl 2xl:max-w-[700px]">
-          Discover our unique approach to building robust digital solutions. We
-          provide cutting-edge strategies to empower your brand online. Discover
-          our unique approach to building robust digital solutions. We provide
-          cutting-edge strategies to empower your brand online.
-        
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+          architecto? Dolore earum impedit facere consequuntur at, illo commodi?
+          Dignissimos voluptas officiis sint! Porro eius facere aperiam.
+          Perspiciatis sapiente veritatis veniam!
         </p>
       </article>
-      <ul className="flex flex-col  gap-6 relative z-50 w-full mt-12 px-2 justify-center lg:flex-row  lg:px-0">
+      <ul className="flex flex-col gap-6 relative z-50 w-full mt-12 px-3 justify-center lg:flex-row  lg:px-0">
         {planosBtns?.map((plano, i) => (
           <li
             key={i}
@@ -60,7 +59,7 @@ const Plano = () => {
             <p className="august-bold text-zinc-300 mt-5 pl-2 text-5xl w-[70%] lg:text-6xl  2xl:text-7xl">
               {plano?.name.toLocaleUpperCase()}
             </p>
-            <div className=" text-grayCustom text-balance mt-3 pl-2 text-sm font-text xl:text-base">
+            <div className=" text-grayCustom text-balance mt-3 px-2 text-sm font-text xl:text-lg xl:mt-4">
               {plano?.data1}
             </div>
           </li>

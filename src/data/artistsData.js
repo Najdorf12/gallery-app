@@ -102,8 +102,8 @@ export const artistsData = [
   {
     id: "ClaudioAlvarex",
     icon: iconAlvarex,
-    firstname: "Claudio",
-    lastname: "Alvarez",
+    firstname: "",
+    lastname: "Alvarex",
     contentHome: "Osos Poéticos filosóficos",
     obras: [
       {
@@ -164,9 +164,9 @@ export const artistsData = [
     ],
   },
   {
-    id: "EduardoHinojosa",
+    id: "EduHinojosa",
     icon: iconEdu,
-    firstname: "Eduardo",
+    firstname: "Edu",
     lastname: "Hinojosa",
     contentHome: "Lorem ipsum dolor sit",
     obras: [
@@ -230,8 +230,8 @@ export const artistsData = [
   {
     id: "VarasMackenzie",
     icon: iconVaras,
-    firstname: "Sebastián",
-    lastname: "Varas",
+    firstname: "Varas",
+    lastname: "Mackenzie",
     contentHome: "Lorem ipsum dolor sit",
     obras: [
       {
@@ -292,10 +292,10 @@ export const artistsData = [
     ],
   },
   {
-    id: "BisyLorem",
+    id: "LaFabrika",
     icon: iconBisy,
-    firstname: "Bisy",
-    lastname: "Lorem",
+    firstname: "La",
+    lastname: "Fabrika",
     contentHome: "Lorem ipsum dolor sit",
     obras: [
       {
