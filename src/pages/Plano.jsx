@@ -46,7 +46,7 @@ const Plano = () => {
         
         </p>
       </article>
-      <ul className="flex flex-col bg-red-500 gap-6 relative z-50 w-full mt-12 px-2 justify-center lg:flex-row  lg:px-0">
+      <ul className="flex flex-col  gap-6 relative z-50 w-full mt-12 px-2 justify-center lg:flex-row  lg:px-0">
         {planosBtns?.map((plano, i) => (
           <li
             key={i}
