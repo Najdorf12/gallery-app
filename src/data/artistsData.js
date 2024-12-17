@@ -41,6 +41,8 @@ export const artistsData = [
     firstname: "Laura",
     lastname: "Aguirre",
     contentHome: "Lorem ipsum dolor sit",
+    description: "",
+    description2: "",
     obras: [
       {
         image: imgLau1,
@@ -105,6 +107,8 @@ export const artistsData = [
     firstname: "",
     lastname: "Alvarex",
     contentHome: "Osos Poéticos filosóficos",
+    description: "",
+    description2: "",
     obras: [
       {
         image: imgAlvarex1,
@@ -169,6 +173,8 @@ export const artistsData = [
     firstname: "Edu",
     lastname: "Hinojosa",
     contentHome: "Lorem ipsum dolor sit",
+    description: "",
+    description2: "",
     obras: [
       {
         image: imgEdu1,
@@ -233,6 +239,8 @@ export const artistsData = [
     firstname: "Varas",
     lastname: "Mackenzie",
     contentHome: "Lorem ipsum dolor sit",
+    description: "",
+    description2: "",
     obras: [
       {
         image: imgVaras1,
@@ -297,6 +305,8 @@ export const artistsData = [
     firstname: "La",
     lastname: "Fabrika",
     contentHome: "Lorem ipsum dolor sit",
+    description: "",
+    description2: "",
     obras: [
       {
         image: imgBisy1,

@@ -38,14 +38,17 @@ const Plano = () => {
           </h1>
           <div className="w-12 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
         </div>
-        <p className="text-sm relative text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl 2xl:max-w-[700px]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-          architecto? Dolore earum impedit facere consequuntur at, illo commodi?
-          Dignissimos voluptas officiis sint! Porro eius facere aperiam.
-          Perspiciatis sapiente veritatis veniam!
+        <p className="text-sm relative text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px]  2xl:text-lg 2xl:max-w-[700px]">
+          Galería Invisible y su exposición colectiva, está compuesta de 25
+          obras plásticas de formato bidimensional. Entre ellas, pintura al óleo
+          y acrílicos, grabado, litografía, serigrafia, ilustración en tinta,
+          acuarelas y fotografía. Todas las obras alineadas en una poética
+          localista, de perfiles urbanos, con un indiscutible discurso social,
+          estético y poético que refleja el imaginario porteño y sudamericano
+          del arte actual.
         </p>
       </article>
-      <ul className="flex flex-col gap-6 relative z-50 w-full mt-12 px-3 justify-center lg:flex-row  lg:px-0">
+      <ul className="flex flex-col gap-6 relative z-50 w-full mt-12 px-3 justify-center lg:flex-row  lg:px-4">
         {planosBtns?.map((plano, i) => (
           <li
             key={i}

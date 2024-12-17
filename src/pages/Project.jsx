@@ -34,33 +34,35 @@ const Project = () => {
         <div ref={containerRef} className="relative">
           {activeArticle === "project" && (
             <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] mt-20">
-              <h1 className="august-bold leading-none text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
-                Focused on digital <br />
-                transforming brands
+              <h1 className="august-bold leading- text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
+              Voces gráficas de Valparaíso en Europa
               </h1>
               <p className="text-sm mt-3 text-zinc-500 lg:mt-6 lg:text-base">
-                Website / E-Commerce / Digital Marketing / SEO / Digital
+              Arte Gráfico / Pintura / Cultura / Poética Urbana
               </p>
               <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                facilis tempora est deserunt nulla doloremque ipsa molestias
-                quasi magnam neque minima suscipit impedit animi labore ipsam,
-                velit dolores accusamus iste. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
+                La propuesta está enfocada en llevar el proyecto “Galería
+                Invisible” a un circuito de exhibición y venta en importantes
+                galerías de arte contemporáneo en España. Buscando así,
+                establecer una red de colaboración que permita la circulación y
+                promoción de este grupo de artistas. Obtener la consolidación de
+                sus trabajos en el medio y lograr una presencia estable en el
+                mercado de arte europeo, promoviendo así su proyección
+                internacional.
               </p>
               <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
                 <button
                   onClick={() => handleButtonClick("about")}
                   className="flex justify-center items-center gap-3 text-whiteCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
                 >
-                  ABOUT US
+                  SOBRE NOSOTROS
                   <img src={arrow} alt="arrow" className="w-3" />
                 </button>
                 <button
                   onClick={() => handleButtonClick("whatWeDo")}
                   className="flex justify-center items-center gap-3 text-grayCustom border-b border-grayCustom pb-1 pl-1 lg:text-lg hover:scale-105 hover:text-whiteCustom duration-500"
                 >
-                  WHAT WE DO
+                  QUE HACEMOS?
                   <img src={arrow} alt="arrow" className="w-3" />
                 </button>
               </div>
