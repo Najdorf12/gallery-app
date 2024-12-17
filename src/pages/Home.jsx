@@ -13,9 +13,9 @@ const Home = ({ artistData }) => {
 
   useEffect(() => {
     const timeline = gsap.timeline({
-      defaults: { duration: 2, ease: "power3.out" },
+      defaults: { duration: 1.7, ease: "power1.out" },
     });
-  
+
     // Animar las líneas simultáneamente
     timeline.fromTo(
       lineRef.current,
@@ -26,9 +26,9 @@ const Home = ({ artistData }) => {
       lineRef2.current,
       { scaleX: 0, opacity: 0 },
       { scaleX: 1, opacity: 1, transformOrigin: "center", duration: 1 },
-      "<" // Este operador asegura que ambas líneas se animen al mismo tiempo
+      "<"
     );
-  
+
     // Animar el título
     timeline.fromTo(
       titleRef.current,
@@ -36,7 +36,7 @@ const Home = ({ artistData }) => {
       { y: 0, opacity: 1, delay: 0.5 },
       "-=0.5" // Ajusta para solapar con la animación previa
     );
-  
+
     // Animar el párrafo de descripción
     timeline.fromTo(
       descriptionRef.current,
@@ -58,12 +58,12 @@ const Home = ({ artistData }) => {
           >
             GALERÍA INVISIBLE
           </h1>
-          <div className="text-stone-500 font-text2 mt-1 flex justify-center items-center gap-4 text-base lg:mt-3 lg:text-xl 2xl:text-2xl">
+          <div className="text-stone-500 font-text2 mt-1 flex justify-center items-center gap-4 text-sm lg:mt-3 lg:text-xl 2xl:text-2xl">
             <span
               ref={lineRef}
               className="w-20 h-[1px] bg-stone-600 lg:w-[400px] xl:w-[500px]"
             ></span>
-            EXPOSICION COLECTIVA{" "}
+            EXPOSICIÓN COLECTIVA{" "}
             <span
               ref={lineRef2}
               className="w-20 h-[1px] bg-stone-600 lg:w-[400px] xl:w-[500px]"
@@ -73,11 +73,13 @@ const Home = ({ artistData }) => {
             ref={descriptionRef}
             className="text-sm  text-grayCustom font-text2 font-medium text-center text-pretty px-2 mt-2 lg:text-base lg:text-balance xl:max-w-[1500px] 2xl:max-w-[1500px] xl:text-lg  2xl:text-xl"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            facilis tempora est deserunt nulla doloremque ipsa molestias quasi
-            magnam neque minima suscipit impedit animi labore ipsam, velit
-            dolores accusamus iste. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit.
+            Galería Invisible nace como el catálogo de la exposición colectiva
+            “Artistas Gráficos de Valpo por el Mundo”, proyecto que reúne a seis
+            artistas contemporáneos de Valparaíso. Este grupo de artistas,
+            utilizan la gráfica y el soporte bidimensional, como herramienta
+            discursiva para desarrollar una investigación estética, poética y
+            narrativa, que representa su imaginario visual
+            porteño-latinoamericanista.
           </p>
         </article>
 
