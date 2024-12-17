@@ -46,11 +46,11 @@ const Plano = () => {
         
         </p>
       </article>
-      <ul className="flex flex-col gap-6 relative z-50 w-full mt-12 px-2  lg:flex-row lg:px-4">
+      <ul className="flex flex-col bg-red-500 gap-6 relative z-50 w-full mt-12 px-2 justify-center lg:flex-row  lg:px-0">
         {planosBtns?.map((plano, i) => (
           <li
             key={i}
-            className="flex flex-col border-b pb-4 max-w-[500px] border-stone-600   rounded-tr-lg rounded-br-md border-r "
+            className="flex flex-col border-b pb-4 max-w-[500px] 2xl:max-w-[550px] border-stone-600   rounded-tr-lg rounded-br-md border-r "
           >
             <img
               className="w-full h-full object-cover rounded-t-lg "
