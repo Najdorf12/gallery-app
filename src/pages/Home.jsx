@@ -13,7 +13,7 @@ const Home = ({ artistData }) => {
 
   useEffect(() => {
     const timeline = gsap.timeline({
-      defaults: { duration: 1.4, ease: "power1.out" },
+      defaults: { duration: 1.1, ease: "power1" },
     });
 
     // Animar las líneas simultáneamente

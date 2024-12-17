@@ -1,33 +1,30 @@
 import TsParticlesBg from "../components/TsParticlesBg";
 import Navbar from "../components/Navbar";
 import arrow from "/arrow.png";
+import imgPlano1 from "/planos/00.jpg"
+import imgPlano2 from "/planos/01.jpg"
+import imgPlano3 from "/planos/02.jpg"
 
 const planosBtns = [
   {
     name: "01 - LOREM IMPSUM",
     data1: "Lorem impsum dolor sit amet concsectur. Some random text",
     data2: "Lorem impsum",
+    img: imgPlano1
   },
   {
     name: "02 - LOREM IMSUM",
     data1: "Lorem impsum dolor sit amet concsectur. Some random text",
     data2: "Lorem impsum",
+    img: imgPlano2
   },
   {
     name: "03 - LOREM IMSUM ",
     data1: "Lorem impsum dolor sit amet concsectur. Some random text",
     data2: "Lorem impsum",
+    img: imgPlano3
   },
-  {
-    name: "04 - LOREM IMSUM",
-    data1: "Lorem impsum dolor sit amet concsectur. Some random text",
-    data2: "Lorem impsum",
-  },
-  {
-    name: "05 - LOREM IMSUM",
-    data1: "Lorem impsum dolor sit amet concsectur. Some random text",
-    data2: "Lorem impsum",
-  },
+
 ];
 
 const Plano = () => {
@@ -49,16 +46,17 @@ const Plano = () => {
        
       </article>
       <ul className="flex flex-col gap-3 relative z-50 w-full mt-12 px-5  lg: ">
-        {planosBtns?.map((artist, i) => (
+        {planosBtns?.map((plano, i) => (
           <li
             key={i}
             className="flex flex-col  border-b border-grayCustom py-3 max-w-[500px]  xl:max-w-[600px] rounded-br-md border-r pl-3"
           >
+            <img src={plano?.img} alt="" />
             <p className="august-bold text-zinc-300 text-5xl w-[70%] lg:text-6xl  2xl:text-7xl">
-              {artist?.name.toLocaleUpperCase()}
+              {plano?.name.toLocaleUpperCase()}
             </p>
             <div className=" text-grayCustom text-balance mt-3 text-sm font-text xl:text-base">
-              {artist?.data1}
+              {plano?.data1}
             </div>
           </li>
         ))}
