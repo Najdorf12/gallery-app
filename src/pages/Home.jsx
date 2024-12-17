@@ -76,7 +76,7 @@ const Home = ({ artistData }) => {
             Galería Invisible nace como el catálogo de la exposición colectiva
             “Artistas Gráficos de Valpo por el Mundo”, proyecto que reúne a seis
             artistas contemporáneos de Valparaíso. Este grupo de artistas,
-            utilizan la gráfica y el soporte bidimensional, como herramienta
+            utilizan la gráfica y el soporte bidimensional como herramienta
             discursiva para desarrollar una investigación estética, poética y
             narrativa, que representa su imaginario visual
             porteño-latinoamericanista.
