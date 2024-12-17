@@ -29,10 +29,10 @@ const planosBtns = [
 
 const Plano = () => {
   return (
-    <section className="flex flex-col bg-blackCustom lg:flex-row lg:items-center  overflow-hidden pb-12 lg:h-screen lg:pb-0 lg:justify-center" >
+    <section className="flex flex-col bg-blackCustom lg:items-center  overflow-hidden pb-12 lg:h-screen lg:pb-0 lg:justify-center" >
       <TsParticlesBg />
       <Navbar />
-      <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default mt-14 lg:max-w-[60%] lg:self-start lg:mt-28 lg:pl-[5%] px-3">
+      <article className="flex flex-col px-3 justify-start items-start relative z-50 w-full cursor-default mt-14 lg:max-w-[60%] lg:self-start lg:mt-28 lg:pl-[5%] lg:flex-row">
         <h1 className="august-bold leading-none text-zinc-300  text-8xl lg:text-[8rem] xl:text-[10rem] 2xl:tsext-[12rem]">
           PLANO
         </h1>
@@ -45,7 +45,7 @@ const Plano = () => {
         </p>
        
       </article>
-      <ul className="flex flex-col gap-3 relative z-50 w-full mt-12 px-5  lg: ">
+      <ul className="flex flex-col gap-3 relative z-50 w-full mt-12 px-5  lg:flex-row ">
         {planosBtns?.map((plano, i) => (
           <li
             key={i}
