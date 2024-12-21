@@ -18,10 +18,10 @@ const App = () => {
           <Route path="/registro" element={<Registro />} />
           <Route path="/plano" element={<Plano />} />
           <Route path="/contacto" element={<Contact />} />
-       {/*    <Route
+          <Route
             path="/artist/:id"
             element={<ArtistDetail artistsData={artistsData} />}
-          /> */}
+          /> 
         </Routes>
       </BrowserRouter>
     </>
