@@ -173,8 +173,9 @@ export const artistsData = [
     firstname: "Edu",
     lastname: "Hinojosa",
     contentHome: "Lorem ipsum dolor sit",
-    description: "",
-    description2: "",
+    description: `Licenciado en Artes y diseñador escénico con amplia experiencia en escenografía y montaje de arte. Desde el año 2016 ha trabajado en diseño escénico, instalación y performance para diversos proyectos con artistas de Chile, Argentina, México, Rumania, Francia, Italia y España. Participando desde el área técnica y de montaje en diferentes espectáculos relacionados a las artes tanto en Chile como en el extranjero; diseñador escénico y montajista en el festival de teatro para el fin del mundo TFM, 2017 México; Asistencia de arte en proyecto “IMPERECEDEROS” intervención y performance Site-especific; obra expuesta en “Prague Quadriennial of Performance Desing y Space 2019”; Praga, Republica Checa o siendo parte del equipo de montaje del proyecto “La Cocina Publica” intervención y performance Site-specific, temporada 2022, París, Francia.`,
+    
+    description2: `Actualmente, se desempeña como montajista de arte y museografía para distintas galerías, museos y salas de arte en Chile, destacándose como montajista del Festival Internacional de Fotografía de Valparaíso (FIFV) desde el año 2018 a la fecha y siendo parte del equipo de montajistas de la"xii Bienal de Artes Internacional de Valparaíso, 2024" en colaboración con FAGNES. Su función dentro de este proyecto es clave ya que será el encargado de gestionar el vínculo entre los artistas expositores y las galerías de arte, además de estar a cargo del montaje de las obras.Participará de esta exposición colectiva con una selección de 4 obras parte de una serie de pinturas al óleo que mezcla sin pudor con tintas, acrílicos o pinturas sintéticas. Sus recursos discursivos y poéticos entrelazan indígenas latinoamericanos con elementos propios de la cultura pop, diseñando personajes contemporáneos que como accesorios de su outfit portan elementos simbólicos propios de la cultura América como un penacho de plumas o máscaras características de la lucha libre mexicana, acompañados de textos escritos con caligrafías pertenecientes al arte urbano brasileño, representando así al habitante moderno latinoamericano.`,
     obras: [
       {
         image: imgEdu1,

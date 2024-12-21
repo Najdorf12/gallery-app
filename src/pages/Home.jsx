@@ -91,7 +91,7 @@ const Home = () => {
             artistas contemporáneos de Valparaíso. Este grupo de artistas,
             utilizan la gráfica y el soporte bidimensional, como herramienta
             discursiva para desarrollar una investigación estética, poética y
-            narrativa, que representa su imaginario visual
+            narrativa que representa su imaginario visual
             porteño-latinoamericanista.
           </p>
         </article>

@@ -39,8 +39,8 @@ const About = ({ handleButtonClick }) => {
         <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl 2xl:max-w-[700px]">
           Cada uno de ellos es un activo creador y gestor en la escena
           contemporánea de arte en Chile, desarrollando en su particularidad una
-          investigación teórica y técnica sostenida en el tiempo que comparteen
-          su narrativaun claro enfoque hacia la construcción de un universo
+          investigación teórica y técnica sostenida en el tiempo que comparte en
+          su narrativa un claro enfoque hacia la construcción de un universo
           visual latinoamericano.
         </p>
         <div className="flex justify-start items-center gap-9 mt-9 lg:gap-10 z-50 relative">
