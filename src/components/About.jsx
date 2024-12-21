@@ -7,22 +7,22 @@ const artistsBtns = [
     data2: "Lorem impsum",
   },
   {
-    name: "Claudio Alvarez",
+    name: "Alvarex",
     data1: "Lorem impsum",
     data2: "Lorem impsum",
   },
   {
-    name: "Eduardo Hinojosa",
+    name: "Edu Hinojosa",
     data1: "Lorem impsum",
     data2: "Lorem impsum",
   },
   {
-    name: "Sebastian Varas",
+    name: "Varas Mackenzie",
     data1: "Lorem impsum",
     data2: "Lorem impsum",
   },
   {
-    name: "Bisy Lorem",
+    name: "La Fabrika",
     data1: "Lorem impsum",
     data2: "Lorem impsum",
   },
