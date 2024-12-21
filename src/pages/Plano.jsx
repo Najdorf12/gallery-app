@@ -36,7 +36,7 @@ const Plano = () => {
           <h1 className="august-bold leading-none text-zinc-300  text-8xl  lg:text-[8rem] xl:text-[9.5rem] 2xl:text-[12rem]">
             PLANO
           </h1>
-          <div className="w-12 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
+          <div className="w-40 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
         </div>
         <p className="text-sm relative text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px]  2xl:text-lg 2xl:max-w-[700px]">
           La propuesta está enfocada en llevar el proyecto “Galería Invisible” a
@@ -48,23 +48,29 @@ const Plano = () => {
           promoviendo así su proyección internacional.
         </p>
       </article>
-      <ul className="flex flex-col gap-6 relative z-50 w-full mt-12 px-3 justify-center lg:flex-row  lg:px-4">
+      <ul className="flex flex-col gap-7 relative z-50 w-full mt-12 px-3 justify-center lg:flex-row  lg:px-4">
         {planosBtns?.map((plano, i) => (
           <li
             key={i}
-            className="flex flex-col border-b pb-4 max-w-[500px] 2xl:max-w-[550px] border-stone-600   rounded-tr-lg rounded-br-md border-r "
+            className="flex flex-col border-b border-stone-600 pb-4 max-w-[500px] 2xl:max-w-[550px]   rounded-tr-lg rounded-br-md  "
           >
             <img
               className="w-full h-full object-cover rounded-t-lg "
               src={plano?.img}
               alt="plano-img"
             />
-            <p className="august-bold text-zinc-300 mt-5 pl-2 text-5xl w-[70%] lg:text-6xl  2xl:text-7xl">
-              {plano?.name.toLocaleUpperCase()}
-            </p>
-            <div className=" text-grayCustom text-balance mt-3 px-2 text-sm font-text xl:text-lg xl:mt-4">
-              {plano?.data1}
-            </div>
+            <article className=" relative flex flex-col pt-4 pb-4 max-w-[650px] font-text2 xl:max-w-[600px] ">
+              <p className="text-whiteCustom flex items-center  border-stone-600 august-bold text-4xl pl-2 border border-r-transparent py-[6px] md:text-5xl rounded-l-lg ">
+                {plano?.name}
+              </p>
+              <div className="text-grayCustom text-balance mt-5 text-sm pl-2">
+                {plano?.data1}
+              </div>
+              <div className="absolute z-50 -bottom-4 right-2 flex gap-3 justify-center items-center md:relative md:self-end text-grayCustom">
+                <div className="w-32 h-[2px] bg-zinc-500"></div>
+                {plano?.name}
+              </div>
+            </article>
           </li>
         ))}
       </ul>
