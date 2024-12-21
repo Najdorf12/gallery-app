@@ -52,21 +52,21 @@ const Plano = () => {
         {planosBtns?.map((plano, i) => (
           <li
             key={i}
-            className="flex flex-col border-b border-stone-600 pb-4 max-w-[500px] 2xl:max-w-[550px]   rounded-tr-lg rounded-br-md  "
+            className="flex flex-col border-b border-stone-600 pb-4 max-w-[500px] 2xl:max-w-[550px]   rounded-tr-lg rounded-br-md lg:pb-2  "
           >
             <img
               className="w-full border-[2px] border-stone-600 h-full object-cover rounded-t-lg "
               src={plano?.img}
               alt="plano-img"
             />
-            <article className=" relative flex flex-col pt-4 pb-4 max-w-[650px] font-text2 xl:max-w-[600px] lg:pb-0 ">
-              <p className="text-whiteCustom flex items-center  border-stone-600 august-bold text-4xl pl-2 border border-r-transparent py-[6px] md:text-5xl rounded-l-lg ">
+            <article className=" relative flex flex-col pt-4 pb-4 max-w-[650px] font-text2 xl:max-w-[600px] lg:pb-0 lg:pt-3">
+              <p className="text-whiteCustom flex items-center  border-stone-600 august-bold text-4xl pl-2 border border-r-transparent py-[6px] md:text-5xl rounded-l-lg lg:py-[9px]">
                 {plano?.name}
               </p>
               <div className="text-grayCustom text-balance mt-5 text-sm pl-2 lg:mt-3 lg:text-base ">
                 {plano?.data1}
               </div>
-              <div className="absolute z-50 -bottom-4 right-2 flex gap-3 justify-center items-center md:relative md:self-end text-stone-500 lg:-bottom-2">
+              <div className="absolute z-50 -bottom-4 right-2 flex gap-3 justify-center items-center md:relative md:self-end text-stone-500 lg:-bottom-1">
                 <div className="w-32 h-[2px] bg-stone-500"></div>
                 {plano?.name}
               </div>
