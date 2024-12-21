@@ -66,8 +66,8 @@ const Plano = () => {
               <div className="text-grayCustom text-balance mt-5 text-sm pl-2">
                 {plano?.data1}
               </div>
-              <div className="absolute z-50 -bottom-4 right-2 flex gap-3 justify-center items-center md:relative md:self-end text-grayCustom">
-                <div className="w-32 h-[2px] bg-zinc-500"></div>
+              <div className="absolute z-50 -bottom-4 right-2 flex gap-3 justify-center items-center md:relative md:self-end text-stone-500">
+                <div className="w-32 h-[2px] bg-stone-500"></div>
                 {plano?.name}
               </div>
             </article>

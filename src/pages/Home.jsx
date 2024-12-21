@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const timeline = gsap.timeline({
-      defaults: { duration: 1, ease: "power1" },
+      defaults: { duration: 1, ease: "power2" },
     });
 
     // Animaciones iniciales
