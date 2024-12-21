@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const timeline = gsap.timeline({
-      defaults: { duration: 1, ease: "power2" },
+      defaults: { duration: 1, ease: "power1.out" },
     });
 
     // Animaciones iniciales
@@ -51,10 +51,11 @@ const Home = () => {
       { y: 30, opacity: 0 },
       {
         y: 0,
+        delay: 1.4,
         opacity: 1,
         duration: 1,
         stagger: 0.4, // <-- Retraso entre cada card
-        ease: "power1",
+        ease: "power1.out",
       }
     );
   }, []);
