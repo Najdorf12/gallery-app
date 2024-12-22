@@ -44,22 +44,11 @@ const Contact = () => {
           >
             <span className="text-redCustom">C</span>ONTACTO
           </h6>
-          <p
-            id="text-reveal2"
-            className="text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
-            autem ipsam maiores quas, ab perferendis soluta modi facere quia et?
-          </p>
-        </article>
-
-        <section className="w-full flex flex-col justify-center items-center mt-16 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28 xl:mt-40 2xl:mt-56">
-          <article className="z-50 px-3 text-balance max-w-[500px]">
+          <div className="z-50 px-4 text-balance max-w-[500px] mt-6 ">
             <div className="text-zinc-300  font-text2 text-start self-start text-xl xl:text-2xl 2xl:text-3xl">
               HABLEMOS AHORA
             </div>
-            <div className="bg-grayCustom w-32 h-[2px] z-50 relative mt-2 xl:w-36 2xl:w-40"></div>
+            <div className="bg-grayCustom w-32 h-[2px] z-50 relative mt-1 xl:w-36 2xl:w-40"></div>
             <p
               style={{ animation: "appear 3s ease-out" }}
               className="text-start font-text text-zinc-400 text-sm mt-3  xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-7"
@@ -67,7 +56,10 @@ const Contact = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
               mollitia, non cumque vel culpa nesciunt.
             </p>
-          </article>
+          </div>
+        </article>
+
+        <section className="w-full flex flex-col justify-center items-center mt-16 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28 xl:mt-40 2xl:mt-56">
           <div
             style={{ animation: "slideInFromLeft 1s ease-out" }}
             className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-3  max-w-[500px]  "
@@ -119,12 +111,14 @@ const Contact = () => {
                 Enviar mensaje
               </button>
             </form>
-            <div className="text-center text-gray-300">
-              Don't have an account?
-              <a className="text-grayCustom pl-2 hover:underline" href="#">
-                Sign up
-              </a>
-            </div>
+          </div>
+          <div
+            id="text-reveal2"
+            className="relative z-50 text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
+            autem ipsam maiores quas, ab perferendis soluta modi facere quia et?
           </div>
         </section>
       </section>

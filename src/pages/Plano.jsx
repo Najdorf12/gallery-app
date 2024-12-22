@@ -71,7 +71,7 @@ const Plano = () => {
           >
             <span className="text-redCustom">P</span>LANO
           </h1>
-          <div className="w-40 h-[1px] bg-grayCustom mt-3 lg:w-[300px] lg:mt-6"></div>
+          {/* <div className="w-40 h-[1px] bg-grayCustom mt-3 lg:w-[300px] lg:mt-6"></div> */}
         </div>
         <p
           ref={subtitleRef}
