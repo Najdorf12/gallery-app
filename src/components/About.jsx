@@ -36,7 +36,7 @@ const About = ({ handleButtonClick }) => {
           NOSOTROS
         </h1>
         <div className="w-12 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
-        <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl 2xl:max-w-[700px]">
+        <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px]  2xl:text-xl 2xl:max-w-[700px]">
           Cada uno de ellos es un activo creador y gestor en la escena
           contemporánea de arte en Chile, desarrollando en su particularidad una
           investigación teórica y técnica sostenida en el tiempo que comparte en

@@ -42,7 +42,7 @@ const Plano = () => {
       .fromTo(titleRef.current, { y: 30, opacity: 0 }, { y: 0, opacity: 1 })
       .fromTo(
         subtitleRef.current,
-        { x: 35, opacity: 0 },
+        { x: 40, opacity: 0 },
         { x: 0, opacity: 1 },
         "<"
       )
@@ -54,7 +54,8 @@ const Plano = () => {
           opacity: 1,
           stagger: 0.3,
           ease: "power1.out",
-        }, "-=.5"
+        },
+        "-=.3"
       );
   }, []);
 
@@ -74,7 +75,7 @@ const Plano = () => {
         </div>
         <p
           ref={subtitleRef}
-          className="text-sm relative text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-sm 2xl:text-base lg:mt-6 max-w-[660px] 2xl:max-w-[700px]"
+          className="text-sm relative text-grayCustom font-text2 font-medium text-balance mt-4  2xl:text-base lg:mt-6 max-w-[660px] 2xl:max-w-[700px]"
         >
           La propuesta está enfocada en llevar el proyecto “Galería Invisible” a
           un circuito de exhibición y venta en importantes galerías de arte

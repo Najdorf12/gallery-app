@@ -33,14 +33,14 @@ const Project = () => {
       <div className="w-full z-[550] relative flex flex-col px-3 lg:pl-[5%] h-full">
         <div ref={containerRef} className="relative">
           {activeArticle === "project" && (
-            <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] mt-20">
-              <h1 className="august-bold leading- text-zinc-300 text-7xl lg:text-[8rem] 2xl:text-[10rem]">
-              Voces gráficas de Valparaíso en Europa
+            <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default  mt-20">
+              <h1 className="august-bold leading-[4.8rem] text-zinc-300  text-7xl max-w-[400px] lg:max-w-[600px] lg:leading-[8.1rem] lg:text-[8rem] 2xl:text-[10rem]">
+              Voces gráficas de Valpo en Europa
               </h1>
-              <p className="text-sm mt-3 text-zinc-500 lg:mt-6 lg:text-base">
+              <p className="text-sm mt-3 text-zinc-500 lg:mt-6 lg:text-lg">
               Arte Gráfico / Pintura / Cultura / Poética Urbana
               </p>
-              <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px] xl:text-lg 2xl:text-xl">
+              <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 max-w-[800px]   lg:mt-5 lg:text-base 2xl:text-xl">
                 La propuesta está enfocada en llevar el proyecto “Galería
                 Invisible” a un circuito de exhibición y venta en importantes
                 galerías de arte contemporáneo en España. Buscando así,
