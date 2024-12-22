@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import TsParticlesBg from "../components/TsParticlesBg";
 import Navbar from "../components/Navbar";
-import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const {
@@ -11,12 +10,6 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    const {
-      register,
-      handleSubmit,
-      formState: { errors },
-    } = useForm();
-
     try {
       const response = await fetch(
         "https://galeria-invisible-backend.vercel.app/send-email",
