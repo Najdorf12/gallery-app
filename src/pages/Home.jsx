@@ -51,7 +51,7 @@ const Home = () => {
       { y: 30, opacity: 0 },
       {
         y: 0,
-        delay: 1.4,
+        delay: 1.2,
         opacity: 1,
         duration: 1,
         stagger: 0.4, // <-- Retraso entre cada card
