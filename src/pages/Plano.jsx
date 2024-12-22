@@ -52,7 +52,7 @@ const Plano = () => {
         {
           y: 0,
           opacity: 1,
-          stagger: 0.4,
+          stagger: 0.3,
           ease: "power1.out",
         }, "-=.5"
       );
