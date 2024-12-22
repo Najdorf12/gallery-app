@@ -77,13 +77,13 @@ const Plano = () => {
           ref={subtitleRef}
           className="text-sm relative text-grayCustom font-text2 font-medium text-balance mt-4  2xl:text-base lg:mt-6 max-w-[660px] 2xl:max-w-[700px]"
         >
-          La propuesta está enfocada en llevar el proyecto “Galería Invisible” a
-          un circuito de exhibición y venta en importantes galerías de arte
-          contemporáneo en España. Buscando así, establecer una red de
-          colaboración que permita la circulación y promoción de este grupo de
-          artistas. Obtener la consolidación de sus trabajos en el medio y
-          lograr una presencia estable en el mercado de arte europeo,
-          promoviendo así su proyección internacional.
+          Galería Invisible y su exposición colectiva, está compuesta de 25
+          obras plásticas de formato bidimensional. Entre ellas, pintura al óleo
+          y acrílicos, grabado, litografía, serigrafia, ilustración en tinta,
+          acuarelas y fotografía. Todas las obras alineadas en una poética
+          localista, de perfiles urbanos, con un indiscutible discurso social,
+          estético y poético que refleja el imaginario porteño y sudamericano
+          del arte actual.
         </p>
       </article>
       <ul className="flex flex-col gap-7 relative z-50 w-full mt-12 px-3 justify-center lg:flex-row lg:px-4">
