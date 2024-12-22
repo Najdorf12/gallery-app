@@ -11,23 +11,34 @@ const Project = () => {
   const containerRef = useRef(null);
   const titleRef = useRef();
   const subtitleRef = useRef();
+  const subtitle2Ref = useRef();
   const btnRef = useRef();
 
   useEffect(() => {
     const timeline = gsap.timeline({
-      defaults: { duration: 0.8, ease: "power1.out" },
+      defaults: { duration: 1, ease: "power1.out" },
     });
-
+  
     timeline
       .fromTo(titleRef.current, { y: 30, opacity: 0 }, { y: 0, opacity: 1 })
-      .fromTo(subtitleRef.current, { x: 40, opacity: 0 }, { x: 0, opacity: 1 });
+      .fromTo(
+        subtitle2Ref.current,
+        { x: 40, opacity: 0 },
+        { x: 0, opacity: 1 },
+      )
+      .fromTo(
+        subtitleRef.current,
+        { x: -40, opacity: 0 },
+        { x: 0, opacity: 1 },
+        "<" // Comienza al mismo tiempo que la animación anterior
+      );
   }, []);
 
   useEffect(() => {
     gsap.fromTo(
       btnRef.current,
-      { x: -30, opacity: 0 },
-      { x: 0, opacity: 1, ease: "power1.out", delay: .9, duration: 1 }
+      { y: 25, opacity: 0 },
+      { y: 0, opacity: 1, ease: "power1.out", delay: 1.5, duration: 1 }
     );
   }, []);
 
@@ -62,7 +73,7 @@ const Project = () => {
                 Voces gráficas de <span className="text-redCustom">Valpo</span>{" "}
                 en Europa
               </h1>
-              <p className="text-sm mt-3 text-zinc-500 lg:mt-6 lg:text-lg">
+              <p  ref={subtitle2Ref} className="text-sm mt-3 text-zinc-500 lg:mt-6 lg:text-lg">
                 Arte Gráfico / Pintura / Cultura / Poética Urbana
               </p>
               <p
