@@ -80,6 +80,7 @@ const Contact = () => {
             >
               <div className="relative">
                 <input
+                  autoComplete="off"
                   placeholder="john@example.com"
                   className="peer h-10 w-full border-b-2 border-stone-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-stone-600"
                   required=""
@@ -97,6 +98,7 @@ const Contact = () => {
               </div>
               <div className="relative">
                 <textarea
+                  autoComplete="off"
                   placeholder=""
                   className="peer h-10 pt-2 w-full border-b-2 border-stone-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-stone-600"
                   required=""
