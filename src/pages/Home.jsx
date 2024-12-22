@@ -63,7 +63,7 @@ const Home = () => {
   return (
     <main className="relative w-full h-[100dvh] lg:h-screen z-50 flex flex-col justify-center items-center overflow-hidden">
       <TsParticlesBg />
-      <div className="w-full h-[100dvh] lg:h-screen z-[550] relative flex flex-col justify-evenly gap-5 items-center pt-7">
+      <div className="w-full h-[100dvh] lg:h-screen z-[550] relative flex flex-col justify-evenly gap-2 items-center pt-7">
         <Navbar />
         <article className="flex flex-col justify-center items-center relative z-50 w-full cursor-default">
           <h1

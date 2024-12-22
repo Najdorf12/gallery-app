@@ -30,7 +30,7 @@ const Registro = () => {
             elit. Nisi facilis tempora est deserunt
           </p>
         </article>
-        <ul className="pt-16 flex flex-col justify-center items-center gap-3 px-4 lg:w-[50%]">
+        {/* <ul className="pt-16 flex flex-col justify-center items-center gap-3 px-4 lg:w-[50%]">
           {registroData?.map((data, i) => (
             <li key={i} className=" relative flex flex-col py-6 max-w-[650px] font-text2 xl:max-w-[600px]">
               <p className="text-whiteCustom  pl-2 border py-[2px]">{data?.name}</p>
@@ -41,7 +41,7 @@ const Registro = () => {
               </div>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

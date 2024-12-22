@@ -42,7 +42,7 @@ const Contact = () => {
             id="split"
             className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]"
           >
-            CONTACTO
+            <span className="text-redCustom">C</span>ONTACTO
           </h6>
           <p
             id="text-reveal2"
