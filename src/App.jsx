@@ -9,6 +9,7 @@ import Registro from "./pages/Registro";
 import Contact from "./pages/Contact";
 
 const App = () => {
+  console.log("DESIGN BY NAJDORF")
   return (
     <>
       <BrowserRouter>
