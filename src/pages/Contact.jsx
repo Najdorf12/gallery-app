@@ -59,10 +59,10 @@ const Contact = () => {
           </div>
         </article>
 
-        <section className="w-full flex flex-col justify-center items-center mt-16 pl-3 font-text2 relative z-50 lg:items-start  lg:mt-28 xl:mt-40 2xl:mt-56">
+        <section className="w-full flex flex-col justify-center items-center mt-5  font-text2 relative z-50 lg:items-start  lg:mt-6 xl:mt-7 2xl:mt-8">
           <div
             style={{ animation: "slideInFromLeft 1s ease-out" }}
-            className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-3  max-w-[500px]  "
+            className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-5  max-w-[500px]  "
           >
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -114,7 +114,7 @@ const Contact = () => {
           </div>
           <div
             id="text-reveal2"
-            className="relative z-50 text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg"
+            className="relative z-50 text-grayCustom font-text text-balance mt-5 text-sm px-4   lg:text-base lg:mt-7 2xl:text-lg"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
