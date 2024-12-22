@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import TsParticlesBg from "../components/TsParticlesBg";
 import Navbar from "../components/Navbar";
-
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const {
@@ -11,9 +11,15 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    /*   try {
+    const {
+      register,
+      handleSubmit,
+      formState: { errors },
+    } = useForm();
+
+    try {
       const response = await fetch(
-        "https://xioami-backend.vercel.app/send-email",
+        "https://galeria-invisible-backend.vercel.app/send-email",
         {
           method: "POST",
           headers: {
@@ -30,20 +36,25 @@ const Contact = () => {
       }
     } catch (err) {
       console.error("Error en la solicitud:", err);
-    } */
+    }
   };
-  
 
   return (
     <>
-      <section  className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
+      <section className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
         <TsParticlesBg />
         <Navbar />
-        <article  className="z-50  text-center self-center lg:text-start lg:pl-[9%] lg:self-start  2xl:pl-[12%]">
-          <h6 id="split" className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]">
+        <article className="z-50  text-center self-center lg:text-start lg:pl-[9%] lg:self-start  2xl:pl-[12%]">
+          <h6
+            id="split"
+            className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]"
+          >
             CONTACTO
           </h6>
-          <p  id="text-reveal2" className="text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg">
+          <p
+            id="text-reveal2"
+            className="text-grayCustom font-text text-balance mt-5 text-sm px-2   lg:text-base lg:mt-7 2xl:text-lg"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             quis temporibus accusantium odit non dicta, optio dolores, ut fugiat
             autem ipsam maiores quas, ab perferendis soluta modi facere quia et?
@@ -68,7 +79,12 @@ const Contact = () => {
             style={{ animation: "slideInFromLeft 1s ease-out" }}
             className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-3  max-w-[500px]  "
           >
-            <form method="POST" action="#" className="py-8 font-text  flex flex-col gap-7 xl:gap-8 2xl:gap-9">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              method="POST"
+              action="#"
+              className="py-8 font-text  flex flex-col gap-7 xl:gap-8 2xl:gap-9"
+            >
               <div className="relative">
                 <input
                   placeholder="john@example.com"
@@ -77,12 +93,13 @@ const Contact = () => {
                   id="email"
                   name="email"
                   type="email"
+                  {...register("email")}
                 />
                 <label
                   className="absolute left-0 -top-3.5 text-grayCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-stone-600 peer-focus:text-sm"
                   for="email"
                 >
-                  Email 
+                  Email
                 </label>
               </div>
               <div className="relative">
@@ -90,7 +107,7 @@ const Contact = () => {
                   placeholder=""
                   className="peer h-10 pt-2 w-full border-b-2 border-stone-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-stone-600"
                   required=""
-                  
+                  {...register("message")}
                 />
                 <label
                   className="absolute left-0 -top-3.5 text-grayCustom text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-stone-600 peer-focus:text-sm"
