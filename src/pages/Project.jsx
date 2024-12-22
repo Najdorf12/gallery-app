@@ -35,7 +35,7 @@ const Project = () => {
           {activeArticle === "project" && (
             <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default  mt-20">
               <h1 className="august-bold leading-[4.8rem] text-zinc-300  text-7xl max-w-[400px] lg:max-w-[600px] lg:leading-[8.1rem] lg:text-[8rem] 2xl:text-[10rem]">
-              Voces gráficas de Valpo en Europa
+              Voces gráficas de <span className="text-redCustom">Valpo</span> en Europa
               </h1>
               <p className="text-sm mt-3 text-zinc-500 lg:mt-6 lg:text-lg">
               Arte Gráfico / Pintura / Cultura / Poética Urbana

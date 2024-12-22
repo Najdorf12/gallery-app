@@ -69,7 +69,7 @@ const Plano = () => {
             ref={titleRef}
             className="august-bold leading-none text-zinc-300 text-8xl lg:text-[8rem] xl:text-[9.5rem] 2xl:text-[12rem]"
           >
-            PLANO
+            <span className="text-redCustom">P</span>LANO
           </h1>
           <div className="w-40 h-[1px] bg-grayCustom mt-3 lg:w-[300px] lg:mt-6"></div>
         </div>

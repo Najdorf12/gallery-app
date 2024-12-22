@@ -33,7 +33,7 @@ const About = ({ handleButtonClick }) => {
     <section className="flex flex-col  h-screen justify-evenly pt-3 lg:flex-row lg:items-center">
       <article className="flex flex-col justify-start items-start relative z-50 w-full cursor-default lg:max-w-[60%] lg:self-start lg:mt-28">
         <h1 className="august-bold leading-none text-zinc-300 text-8xl lg:text-[8rem] xl:text-[10rem] 2xl:text-[12rem]">
-          NOSOTROS
+          <span className="text-redCustom">N</span>OSOTROS
         </h1>
         <div className="w-12 h-[1px] bg-grayCustom mt-3  lg:w-[300px] lg:mt-6"></div>
         <p className="text-sm text-grayCustom font-text2 font-medium text-balance mt-4 lg:text-base lg:mt-6 max-w-[660px]  2xl:text-xl 2xl:max-w-[700px]">
