@@ -51,7 +51,7 @@ const Contact = () => {
             <div className="bg-grayCustom w-32 h-[2px] z-50 relative mt-1 xl:w-36 2xl:w-40"></div>
             <p
               style={{ animation: "appear 3s ease-out" }}
-              className="text-start font-text text-zinc-400 text-sm mt-3  xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-7"
+              className="text-start font-text text-grayCustom text-sm mt-3  xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-7"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
               mollitia, non cumque vel culpa nesciunt.
@@ -105,7 +105,7 @@ const Contact = () => {
               </div>
 
               <button
-                className="w-full py-2 px-4 border border-stone-500 hover:border-whiteCustom hover:text-whiteCustom rounded-md text-zinc-300  font-semibold transition duration-500"
+                className="w-full py-2 px-4 border border-stone-500 hover:border-whiteCustom hover:text-whiteCustom rounded-md text-whiteCustom  font-semibold transition duration-500"
                 type="submit"
               >
                 Enviar mensaje
