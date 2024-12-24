@@ -18,7 +18,7 @@ const Contact = () => {
 
   useEffect(() => {
     const timeline = gsap.timeline({
-      defaults: { duration: 1, ease: "power1.out" },
+      defaults: { duration:  .9, ease: "power1.out" },
     });
 
     timeline
