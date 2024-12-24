@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Slider from "../components/Slider";
 import GalleryArtist from "../components/GalleryArtist";
-/* import TsParticlesBg2 from "../components/TsParticlesBg2"; */
+import  quote from "/quote.png";
 
 const ArtistDetail = ({ artistsData }) => {
   const { id } = useParams();
@@ -26,7 +26,7 @@ const ArtistDetail = ({ artistsData }) => {
         </div>
       </article>
 
-      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-14 lg:justify-evenly lg:items-center">
+      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-20 lg:justify-evenly lg:items-center">
         <div className="px-4 font-text2 font-normal flex flex-col max-w-[700px]">
           <p className="text-whiteCustom text-sm 2xl:text-base">
             Licenciando en Artes con mención en Pintura y Gráfica Universidad de
@@ -39,13 +39,16 @@ const ArtistDetail = ({ artistsData }) => {
           </p>
         </div>
 
-        <div className=" mt-12 pl-3 text-balance font-normal text-grayCustom font-text text-3xl max-w-[700px] xl:text-4xl xl:mt-0">
+        <div className="relative  mt-20 ml-4 pl-3 pt-2 text-balance  font-normal text-grayCustom font-text text-3xl max-w-[700px] lg:pt-6 xl:text-4xl xl:mt-0">
+          <figure className="absolute -top-14 -left-2">
+            <img src={quote} alt="quote-icon" className="w-16 lg:w-20" />
+          </figure>
           <article className="h-full">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.{" "}
+          El arte no reproduce lo visible, sino que {" "}
             <span className="text-redCustom">
-              Lorem ipsum dolor sit amet consectetur adipisic elit.{" "}
+            hace visible lo que no siempre lo es {" "}
             </span>
-            Natus ipsa culpa in voluptas, repellendus nesciunt possimus
+         <div className="text-base mt-3"> - Paul Klee -</div>
           </article>
         </div>
       </article>
