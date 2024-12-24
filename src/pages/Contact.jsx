@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import TsParticlesBg from "../components/TsParticlesBg";
 import Navbar from "../components/Navbar";
+import { gsap } from "gsap";
+import { useRef, useEffect } from "react";
 
 const Contact = () => {
   const {
@@ -8,6 +10,33 @@ const Contact = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const titleRef = useRef();
+  const subtitleRef = useRef();
+  const textRef = useRef();
+  const formRef = useRef();
+
+  useEffect(() => {
+    const timeline = gsap.timeline({
+      defaults: { duration: 1, ease: "power1.out" },
+    });
+
+    timeline
+      .fromTo(titleRef.current, { y: 30, opacity: 0 }, { y: 0, opacity: 1 })
+      .fromTo(subtitleRef.current, { x: 40, opacity: 0 }, { x: 0, opacity: 1 })
+      .fromTo(
+        textRef.current,
+        { x: -40, opacity: 0 },
+        { x: 0, opacity: 1 },
+        "<" // Comienza al mismo tiempo que la animación anterior
+      )
+      .fromTo(
+        formRef.current,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1 },
+        "<"
+      );
+  }, []);
 
   const onSubmit = async (data) => {
     try {
@@ -39,17 +68,22 @@ const Contact = () => {
         <Navbar />
         <article className="z-50  text-center self-center lg:text-start lg:pl-[9%] lg:w-1/2 lg:self-start  2xl:pl-[12%] ">
           <h6
+            ref={titleRef}
             id="split"
             className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]"
           >
             <span className="text-redCustom">C</span>ONTACTO
           </h6>
           <div className="z-50 px-4 text-balance max-w-[500px] mt-6 ">
-            <div className="text-zinc-300  font-text2 text-start self-start text-xl xl:text-2xl 2xl:text-3xl">
+            <div
+              ref={subtitleRef}
+              className="text-zinc-300  font-text2 text-start self-start text-xl xl:text-2xl 2xl:text-3xl"
+            >
               HABLEMOS AHORA
             </div>
             <div className="bg-grayCustom w-32 h-[2px] z-50 relative mt-1 xl:w-36 2xl:w-40"></div>
             <p
+              ref={textRef}
               style={{ animation: "appear 3s ease-out" }}
               className="text-start font-text text-grayCustom text-sm mt-3  xl:text-base xl:mt-5 2xl:text-lg 2xl:mt-7"
             >
@@ -62,7 +96,7 @@ const Contact = () => {
         <section className="w-full flex flex-col justify-center items-center mt-5  font-text2 relative z-50  lg:w-1/2 lg:mt-28 lg:items-start xl:mt-40   ">
           <div
             style={{ animation: "slideInFromLeft 1s ease-out" }}
-            className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-5  max-w-[500px]  "
+            className="w-full relative rounded-md  overflow-hidden flex flex-col px-5 max-w-[500px]"
           >
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -113,6 +147,7 @@ const Contact = () => {
             </form>
           </div>
           <div
+            ref={formRef}
             id="text-reveal2"
             className="relative z-50 text-grayCustom font-text text-balance mt-5 text-sm px-4   lg:text-base lg:mt-7 2xl:text-lg"
           >

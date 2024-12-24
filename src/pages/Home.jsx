@@ -3,7 +3,7 @@ import CardsHome from "../components/CardsHome";
 import TsParticlesBg from "../components/TsParticlesBg";
 import { artistsData } from "../data/artistsData";
 import { useEffect, useRef } from "react";
-import gsap from "gsap";
+import { gsap } from "gsap";
 
 const Home = () => {
   const titleRef = useRef(null);
