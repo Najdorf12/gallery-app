@@ -37,7 +37,7 @@ const Contact = () => {
       <section className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
         <TsParticlesBg />
         <Navbar />
-        <article className="z-50  text-center self-center lg:text-start lg:pl-[9%] lg:self-start  2xl:pl-[12%]">
+        <article className="z-50  text-center self-center lg:text-start lg:pl-[9%] lg:w-1/2 lg:self-start  2xl:pl-[12%] ">
           <h6
             id="split"
             className="text-8xl text-stone-300  font-medium august-bold md:text-9xl  lg:text-[10rem] xl:text-[14rem] 2xl:text-[16rem]"
@@ -59,7 +59,7 @@ const Contact = () => {
           </div>
         </article>
 
-        <section className="w-full flex flex-col justify-center items-center mt-5  font-text2 relative z-50 lg:items-start  lg:mt-6 xl:mt-7 2xl:mt-8">
+        <section className="w-full flex flex-col justify-center items-center mt-5  font-text2 relative z-50  lg:w-1/2 lg:mt-28 lg:items-start xl:mt-40   ">
           <div
             style={{ animation: "slideInFromLeft 1s ease-out" }}
             className="w-full relative   rounded-md  overflow-hidden flex flex-col   px-5  max-w-[500px]  "
