@@ -34,7 +34,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="pt-20 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
+      <section className="pt-16 w-full bg-white flex flex-col lg:flex-row lg:items:center lg:justify-center lg:pt-28 ">
         <TsParticlesBg />
         <Navbar />
         <article className="z-50  text-center self-center lg:text-start lg:pl-[9%] lg:w-1/2 lg:self-start  2xl:pl-[12%] ">
