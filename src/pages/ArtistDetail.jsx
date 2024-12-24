@@ -26,9 +26,9 @@ const ArtistDetail = ({ artistsData }) => {
         </div>
       </article>
 
-      <article className="bg-blackCustom pt-6 pb-5 text-balance z-50 relative lg:flex lg:py-20 lg:justify-evenly lg:items-center">
-        <div className="px-4 font-text2 font-normal flex flex-col max-w-[700px]">
-          <p className="text-whiteCustom text-base 2xl:text-base">
+      <article className="bg-blackCustom py-9 text-balance z-50 relative lg:flex lg:py-20 lg:justify-evenly lg:items-end">
+        <div className="px-4 font-text2 font-normal flex flex-col max-w-[700px] lg:self-start">
+          <p className="text-whiteCustom text-base 2xl:text-lg">
             {artist.fullName.toUpperCase()}
           </p>
           <p className="text-balance text-start pr-6 text-grayCustom mt-3 text-sm 2xl:text-base">
@@ -36,7 +36,7 @@ const ArtistDetail = ({ artistsData }) => {
           </p>
         </div>
 
-        <div className="relative  mt-20 ml-4 pl-3 pt-2 text-balance  font-normal text-grayCustom font-text text-3xl max-w-[700px] lg:pt-6 xl:text-4xl xl:mt-0 2xl:text-5xl">
+        <div className="relative mt-24 ml-4 pl-3 pt-3 text-balance  font-normal text-grayCustom font-text text-3xl max-w-[700px] lg:pt-6 xl:text-4xl xl:mt-12 2xl:text-5xl  2xl:max-w-[900px]">
           <figure className="absolute -top-14 -left-2">
             <img src={quote} alt="quote-icon" className="w-16 lg:w-20" />
           </figure>
@@ -45,7 +45,7 @@ const ArtistDetail = ({ artistsData }) => {
             <span className="text-redCustom">
             hace visible lo que no siempre lo es {" "}
             </span>
-         <div className="text-base mt-3 2xl:text-lg 2xl:mt-4"> - Paul Klee -</div>
+         <div className="text-base mt-2 flex justify-end w-[90%] xl:text-lg 2xl:mt-4 2xl:text-xl"> - Paul Klee -</div>
           </article>
         </div>
       </article>
