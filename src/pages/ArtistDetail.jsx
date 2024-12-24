@@ -59,17 +59,7 @@ const ArtistDetail = ({ artistsData }) => {
       <footer>
         <div className="mt-20 px-4 z-50 relative bg-blackCustom py-12 lg:pl-16 lg:max-w-[60%] lg:rounded-r-lg">
           <p className="text-sm font-text2 text-grayCustom text-balance xl:pr-12 2xl:text-base ">
-            Actualmente, se desempeña en el montaje de arte y museografía para
-            distintos museos y salas de arte en Chile, destacándose como
-            montajista del Festival Internacional de Fotografía de Valparaíso
-            (FIFV) desde 2018. El año 2024 es parte del equipo de montajistas de
-            la "Bienal de Artes Internacional de Valparaíso" en colaboración con
-            FAGNES. A lo largo de su carrera, ha logrado una integración única
-            de su formación artística con su conocimiento en ingeniería,
-            habiendo cursado estudios en ingeniería en construcción,
-            electromecánica, robótica y fotografía, lo que le permite aportar
-            una visión técnica innovadora y multidisciplinaria a sus proyectos
-            artísticos.{" "}
+            {artist?.description2}
           </p>
         </div>
         <div className=" py-12 text-balance text-start px-3 flex justify-end xl:py-20">
