@@ -93,7 +93,7 @@ const Contact = () => {
           </div>
         </article>
 
-        <section className="w-full flex flex-col justify-center items-center mt-5  font-text2 relative z-50  lg:w-1/2 lg:mt-28 lg:items-start xl:mt-40   ">
+        <section className="w-full flex flex-col justify-center items-center mt-5  font-text2 relative z-50  lg:w-1/2 lg:mt-28 lg:items-start xl:mt-40  2xl:mt-56  ">
           <div
             style={{ animation: "slideInFromLeft 1s ease-out" }}
             className="w-full relative rounded-md  overflow-hidden flex flex-col px-5 max-w-[500px]"
