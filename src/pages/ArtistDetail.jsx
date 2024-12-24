@@ -39,7 +39,7 @@ const ArtistDetail = ({ artistsData }) => {
           </p>
         </div>
 
-        <div className="relative  mt-20 ml-4 pl-3 pt-2 text-balance  font-normal text-grayCustom font-text text-3xl max-w-[700px] lg:pt-6 xl:text-4xl xl:mt-0">
+        <div className="relative  mt-20 ml-4 pl-3 pt-2 text-balance  font-normal text-grayCustom font-text text-3xl max-w-[700px] lg:pt-6 xl:text-4xl xl:mt-0 2xl:text-5xl">
           <figure className="absolute -top-14 -left-2">
             <img src={quote} alt="quote-icon" className="w-16 lg:w-20" />
           </figure>
@@ -48,7 +48,7 @@ const ArtistDetail = ({ artistsData }) => {
             <span className="text-redCustom">
             hace visible lo que no siempre lo es {" "}
             </span>
-         <div className="text-base mt-3"> - Paul Klee -</div>
+         <div className="text-base mt-3 2xl:text-lg 2xl:mt-4"> - Paul Klee -</div>
           </article>
         </div>
       </article>
