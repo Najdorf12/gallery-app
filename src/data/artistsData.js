@@ -40,9 +40,12 @@ export const artistsData = [
     icon: iconLau,
     firstname: "Laura",
     lastname: "Aguirre",
+    fullName: "Laura Aguirre Naretto",
     contentHome: "Lorem ipsum dolor sit",
-    description: "",
-    description2: "",
+    description:
+      "Artista plástica y arquitecta en formación, Laura desarrolla su quehacer artístico en torno a diversas técnicas de grabado tradicional, de una factura impecable, donde explora en el campo bidimensional la expansión arquitectónica propia del espacio polidimensional. Combinagestos de apariencia espontanea, con un cuidado único en la composición y su estructura.La obra de Laura es pulcra, precisa en su realización y su narrativa, cuidando cada detalle tanto en su construcción como en su poética.",
+    description2:
+      "Para este proyecto Laura expondrá 5 grabados, litografías, parte de su investigación y tesis de grado académico que hablan de la fragilidad de memoria, la familia, la fragmentación, el olvido, el registro y el documento gráfico como huella de lo que no debe desaparecer.",
     obras: [
       {
         image: imgLau1,
@@ -106,9 +109,12 @@ export const artistsData = [
     icon: iconAlvarex,
     firstname: "",
     lastname: "Alvarex",
+    fullName: "Claudio Álvarez",
     contentHome: "Osos Poéticos filosóficos",
-    description: "",
-    description2: "",
+    description:
+      "Es un destacado creador visual y narrador gráfico de Valparaíso, Chile. Su obra es particularmente reconocida por la creación del cómic “Osos Poéticos  Filosóficos”. Proyecto que el 2006, es publicado por primera vez en formato blog y que ha evolucionado a través devarias publicaciones en revistas y fanzines. En 2019, la editorial Montacerdos lanzó “Osos Poéticos  Filosóficos: Peligro Demolición”, una recopilación que consolidó supropuesta visual y narrativa, marcada por un estilo irónico, sarcástico y provocador.",
+    description2:
+      "Su trabajo grafico se caracteriza por la exploración de imaginarios surrealistas, repletos de una carga simbólica, narrativa, que invitan al espectador a una reflexión filosófica y a un cuestionamiento de la semiótica a partir de situaciones cotidianas.",
     obras: [
       {
         image: imgAlvarex1,
@@ -172,10 +178,11 @@ export const artistsData = [
     icon: iconEdu,
     firstname: "Edu",
     lastname: "Hinojosa",
+    fullName: "Eduardo Hinojosa",
     contentHome: "Lorem ipsum dolor sit",
-    description: `Licenciado en Artes y diseñador escénico con amplia experiencia en escenografía y montaje de arte. Desde el año 2016 ha trabajado en diseño escénico, instalación y performance para diversos proyectos con artistas de Chile, Argentina, México, Rumania, Francia, Italia y España. Participando desde el área técnica y de montaje en diferentes espectáculos relacionados a las artes tanto en Chile como en el extranjero; diseñador escénico y montajista en el festival de teatro para el fin del mundo TFM, 2017 México; Asistencia de arte en proyecto “IMPERECEDEROS” intervención y performance Site-especific; obra expuesta en “Prague Quadriennial of Performance Desing y Space 2019”; Praga, Republica Checa o siendo parte del equipo de montaje del proyecto “La Cocina Publica” intervención y performance Site-specific, temporada 2022, París, Francia.`,
-    
-    description2: `Actualmente, se desempeña como montajista de arte y museografía para distintas galerías, museos y salas de arte en Chile, destacándose como montajista del Festival Internacional de Fotografía de Valparaíso (FIFV) desde el año 2018 a la fecha y siendo parte del equipo de montajistas de la"xii Bienal de Artes Internacional de Valparaíso, 2024" en colaboración con FAGNES. Su función dentro de este proyecto es clave ya que será el encargado de gestionar el vínculo entre los artistas expositores y las galerías de arte, además de estar a cargo del montaje de las obras.Participará de esta exposición colectiva con una selección de 4 obras parte de una serie de pinturas al óleo que mezcla sin pudor con tintas, acrílicos o pinturas sintéticas. Sus recursos discursivos y poéticos entrelazan indígenas latinoamericanos con elementos propios de la cultura pop, diseñando personajes contemporáneos que como accesorios de su outfit portan elementos simbólicos propios de la cultura América como un penacho de plumas o máscaras características de la lucha libre mexicana, acompañados de textos escritos con caligrafías pertenecientes al arte urbano brasileño, representando así al habitante moderno latinoamericano.`,
+    description: `Licenciado en Artes y diseñador escénico con amplia experiencia en escenógrafia y montaje de arte. Desde el año 2016 ha trabajado en diseño escénico, instalación y performance para diversos proyectos con artistas de Chile, Argentina, México, Rumania, Francia, Italia y España. Participando desde el área técnica y de montaje en diferentes espectáculos relacionados a las artes tanto en Chile como en el extranjero; diseñador escénico y montajista en el festival de teatro para el fin del mundo TFM, 2017 México; Asistencia de arte en proyecto “IMPERECEDEROS” intervención y performance Site-especific; obra expuesta en “Prague Quadriennial of Performance Desing y Space 2019”; Praga, Republica Checa o siendo parte del equipo de montaje del proyecto “La Cocina Publica” intervención y performance Site-specific, temporada 2022, Paris, Francia. Actualmente, se desempeña como montajista de arte y museografía para distintas galerías, museos y salas de arte en Chile, destacándose como montajista del Festival Internacional de Fotografía de Valparaíso (FIFV) desde el año 2018 a la fecha y siendo parte del equipo de montajistas de la &quot;xii Bienal de Artes Internacional de Valparaíso, 2024&quot; en colaboración con FAGNES.`,
+
+    description2: `Participara de esta exposición colectiva con una selección de 4 obras parte de una serie de pinturas al óleo que mezcla sin pudor con tintas, acrílicos o pinturas sintéticas. Sus recursos discursivos y poéticos entrelazan indígenas latinoamericanos con elementos propios de la cultura pop, diseñando personajes contemporáneos que como accesorios de su outfit portan elementos simbólicos propios de la cultura América como un penacho de plumas o mascaras características de la lucha libre mexicana, acompañados de textos escritos con caligrafías pertenecientes al arte urbano brasileño, representando así al habitante moderno latinoamericano.`,
     obras: [
       {
         image: imgEdu1,
@@ -239,8 +246,9 @@ export const artistsData = [
     icon: iconVaras,
     firstname: "Varas",
     lastname: "Mackenzie",
+    fullName : "Sebastián Varas Mackenzie",
     contentHome: "Lorem ipsum dolor sit",
-    description: "",
+    description: "La obra de Sebastián, “Terrícola desde 1983”, no necesita colores; con tan solo el blanco y el negro, transporta al espectador a una aventura lúdica por un mundo lleno de fantasía. Los materiales son clásicos: la pluma, el pincel y la tinta sobre el papel, uno de los principalesmateriales que utiliza. Conjugando de manera perfecta, en una obra minuciosamente acabada, con trazos infantiles que dan la identidad necesaria para cada escena.",
     description2: "",
     obras: [
       {
@@ -305,8 +313,9 @@ export const artistsData = [
     icon: iconBisy,
     firstname: "La",
     lastname: "Fabrika",
+    fullName : "Amandine & Pancho",
     contentHome: "Lorem ipsum dolor sit",
-    description: "",
+    description: "Es un taller de artes gráficas que mediante técnicas tradicionales de impresión y captura busca por medio de una cámara análoga retratar escenas propias de Valparaíso, escenas que post-revelado son acompañadas por todo un ambiente pictórico asociado a las técnicas tradicionales de imprenta y grabado. Como si fueran coloristas de una novela de realismo mágico cuidadosamente seleccionan colores de fantasía, como sacados del pomo con los que darán vida a las imágenes capturadas. Trabajan la serigrafia como recurso pictórico, la fotografía como parte de la huella gráfica y retoques análogos cierran una combinación perfecta entre lo tradicional y lo contemporáneo.",
     description2: "",
     obras: [
       {
